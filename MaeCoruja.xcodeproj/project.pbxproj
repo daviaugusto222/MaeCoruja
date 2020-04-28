@@ -17,6 +17,7 @@
 		4BF3AE662458579800659F75 /* Recordacoes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF3AE652458579800659F75 /* Recordacoes.storyboard */; };
 		4BF3AE68245857A200659F75 /* Guias.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF3AE67245857A200659F75 /* Guias.storyboard */; };
 		4BF3AE6A245857B400659F75 /* LeiteMaterno.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF3AE69245857B400659F75 /* LeiteMaterno.storyboard */; };
+		4BF3AE6F245874A700659F75 /* RecordacoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF3AE6E245874A700659F75 /* RecordacoesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		4BF3AE652458579800659F75 /* Recordacoes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recordacoes.storyboard; sourceTree = "<group>"; };
 		4BF3AE67245857A200659F75 /* Guias.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Guias.storyboard; sourceTree = "<group>"; };
 		4BF3AE69245857B400659F75 /* LeiteMaterno.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LeiteMaterno.storyboard; sourceTree = "<group>"; };
+		4BF3AE6E245874A700659F75 /* RecordacoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordacoesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,9 @@
 			children = (
 				4BB79925245726CF0015CFF6 /* AppDelegate.swift */,
 				4BB79927245726CF0015CFF6 /* SceneDelegate.swift */,
+				4BF3AE6D2458744C00659F75 /* Model */,
 				4BF3AE642458551900659F75 /* View */,
+				4BF3AE6C2458743B00659F75 /* Controller */,
 				4BB79933245726D20015CFF6 /* Info.plist */,
 			);
 			path = MaeCoruja;
@@ -140,6 +144,21 @@
 				4BF3AE69245857B400659F75 /* LeiteMaterno.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4BF3AE6C2458743B00659F75 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4BF3AE6E245874A700659F75 /* RecordacoesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4BF3AE6D2458744C00659F75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BB79926245726CF0015CFF6 /* AppDelegate.swift in Sources */,
+				4BF3AE6F245874A700659F75 /* RecordacoesViewController.swift in Sources */,
 				4BB79928245726CF0015CFF6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
