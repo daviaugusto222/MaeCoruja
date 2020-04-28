@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PVJ-3n-UHc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="mnl-dM-Mrq">
+            <objects>
+                <viewController id="iyR-PI-AFR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z6K-g0-sFM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="CXa-BT-kgw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZLV-lN-DcH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g18-RS-y2k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997.10144927536237" y="114.50892857142857"/>
+        </scene>
+        <!--Recordações-->
+        <scene sceneID="lbi-SL-Utk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PVJ-3n-UHc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Recordações" image="camera.on.rectangle.fill" catalog="system" id="SBQ-BB-JpR"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lv4-Fw-5u9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iyR-PI-AFR" kind="relationship" relationship="rootViewController" id="eZ8-nw-1zo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DLl-jG-bvB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86.956521739130437" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera.on.rectangle.fill" catalog="system" width="128" height="96"/>
+    </resources>
+</document>
