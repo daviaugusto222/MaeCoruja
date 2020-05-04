@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,6 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Salmon"/>
+                        <color key="selectedImageTintColor" name="Salmon"/>
                     </tabBar>
                     <connections>
                         <segue destination="fBr-O3-7DQ" kind="relationship" relationship="viewControllers" id="LUV-lC-LsH"/>
@@ -56,4 +59,9 @@
             <point key="canvasLocation" x="-646" y="94"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="Salmon">
+            <color red="1" green="0.66666666666666663" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

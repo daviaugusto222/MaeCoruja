@@ -3,6 +3,7 @@
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,16 +19,13 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3GZ-6p-1iE">
                                 <rect key="frame" x="0.0" y="44" width="414" height="643"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="s1g-ib-9ld">
                                     <size key="itemSize" width="154" height="145"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundopapel" id="yAy-bm-MUC">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="643"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                </imageView>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PolaroidCell" id="Yuz-Rc-0BI">
                                         <rect key="frame" x="0.0" y="0.0" width="154" height="145"/>
@@ -55,7 +53,9 @@
                         <viewLayoutGuide key="safeArea" id="CXa-BT-kgw"/>
                     </view>
                     <navigationItem key="navigationItem" title="Recordações" id="ZLV-lN-DcH">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3Af-2i-53y"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3Af-2i-53y">
+                            <color key="tintColor" name="Salmon"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="recordacoesCollection" destination="3GZ-6p-1iE" id="avH-ec-mKn"/>
@@ -73,7 +73,7 @@
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="lv4-Fw-5u9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="104.33333333333334"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -88,6 +88,8 @@
     </scenes>
     <resources>
         <image name="camera.on.rectangle.fill" catalog="system" width="128" height="96"/>
-        <image name="fundopapel" width="626" height="417"/>
+        <namedColor name="Salmon">
+            <color red="1" green="0.66666666666666663" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
