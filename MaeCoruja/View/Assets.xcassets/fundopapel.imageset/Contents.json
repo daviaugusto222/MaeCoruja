@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "fundo-da-textura-do-livro-branco-ou-superficie-do-cartao-de-uma-caixa-de-papel-para-embalar-e-para-o-design-decoracao-e-natureza-conceito-de-fundo_174431-22.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

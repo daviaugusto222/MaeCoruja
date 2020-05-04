@@ -1,27 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PVJ-3n-UHc">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Recordações-->
         <scene sceneID="mnl-dM-Mrq">
             <objects>
-                <viewController id="iyR-PI-AFR" sceneMemberID="viewController">
+                <viewController id="iyR-PI-AFR" customClass="RecordacoesViewController" customModule="MaeCoruja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z6K-g0-sFM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3GZ-6p-1iE">
+                                <rect key="frame" x="0.0" y="117" width="414" height="570"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="s1g-ib-9ld">
+                                    <size key="itemSize" width="154" height="145"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundopapel" id="yAy-bm-MUC">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="570"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PolaroidCell" id="Yuz-Rc-0BI">
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="145"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Sgo-Jd-LGd">
+                                            <rect key="frame" x="0.0" y="0.0" width="154" height="145"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="154" height="145"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="iyR-PI-AFR" id="QmF-vp-oKF"/>
+                                    <outlet property="delegate" destination="iyR-PI-AFR" id="cGL-ZR-nzH"/>
+                                </connections>
+                            </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="D1x-yQ-6gP">
+                                <rect key="frame" x="16" y="64" width="382" height="32"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="CXa-BT-kgw" firstAttribute="trailing" secondItem="D1x-yQ-6gP" secondAttribute="trailing" constant="16" id="1q5-lr-YCo"/>
+                            <constraint firstItem="D1x-yQ-6gP" firstAttribute="top" secondItem="CXa-BT-kgw" secondAttribute="top" constant="20" id="GN6-tt-sBv"/>
+                            <constraint firstItem="D1x-yQ-6gP" firstAttribute="leading" secondItem="CXa-BT-kgw" secondAttribute="leading" constant="16" id="Jti-rN-zgL"/>
+                            <constraint firstItem="3GZ-6p-1iE" firstAttribute="leading" secondItem="CXa-BT-kgw" secondAttribute="leading" id="L65-g6-rQQ"/>
+                            <constraint firstItem="D1x-yQ-6gP" firstAttribute="centerX" secondItem="CXa-BT-kgw" secondAttribute="centerX" id="Mky-1y-xKn"/>
+                            <constraint firstItem="CXa-BT-kgw" firstAttribute="trailing" secondItem="3GZ-6p-1iE" secondAttribute="trailing" id="MyM-zq-rRu"/>
+                            <constraint firstItem="3GZ-6p-1iE" firstAttribute="top" secondItem="D1x-yQ-6gP" secondAttribute="bottom" constant="22" id="eI4-zl-tU5"/>
+                            <constraint firstItem="CXa-BT-kgw" firstAttribute="bottom" secondItem="3GZ-6p-1iE" secondAttribute="bottom" id="fzl-Tj-Oul"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="CXa-BT-kgw"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Recordações" largeTitleDisplayMode="always" id="ZLV-lN-DcH"/>
+                    <navigationItem key="navigationItem" title="Recordações" id="ZLV-lN-DcH">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3Af-2i-53y"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="recordacoesCollection" destination="3GZ-6p-1iE" id="avH-ec-mKn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g18-RS-y2k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="997.10144927536237" y="114.50892857142857"/>
+            <point key="canvasLocation" x="997.10144927536237" y="114.1304347826087"/>
         </scene>
         <!--Recordações-->
         <scene sceneID="lbi-SL-Utk">
@@ -30,8 +90,8 @@
                     <tabBarItem key="tabBarItem" title="Recordações" image="camera.on.rectangle.fill" catalog="system" id="SBQ-BB-JpR"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lv4-Fw-5u9">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="lv4-Fw-5u9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -46,5 +106,6 @@
     </scenes>
     <resources>
         <image name="camera.on.rectangle.fill" catalog="system" width="128" height="96"/>
+        <image name="fundopapel" width="626" height="417"/>
     </resources>
 </document>

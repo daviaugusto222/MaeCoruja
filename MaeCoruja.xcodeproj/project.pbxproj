@@ -18,6 +18,9 @@
 		4BF3AE68245857A200659F75 /* Guias.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF3AE67245857A200659F75 /* Guias.storyboard */; };
 		4BF3AE6A245857B400659F75 /* LeiteMaterno.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF3AE69245857B400659F75 /* LeiteMaterno.storyboard */; };
 		4BF3AE6F245874A700659F75 /* RecordacoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF3AE6E245874A700659F75 /* RecordacoesViewController.swift */; };
+		4BF3AE71245AF49000659F75 /* PolaroidCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BF3AE70245AF49000659F75 /* PolaroidCollectionCell.xib */; };
+		4BF3AE73245AFAB200659F75 /* PolaroidCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF3AE72245AFAB200659F75 /* PolaroidCollectionViewCell.swift */; };
+		4BF3AE75245B0A1000659F75 /* Polaroid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF3AE74245B0A1000659F75 /* Polaroid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		4BF3AE67245857A200659F75 /* Guias.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Guias.storyboard; sourceTree = "<group>"; };
 		4BF3AE69245857B400659F75 /* LeiteMaterno.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LeiteMaterno.storyboard; sourceTree = "<group>"; };
 		4BF3AE6E245874A700659F75 /* RecordacoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordacoesViewController.swift; sourceTree = "<group>"; };
+		4BF3AE70245AF49000659F75 /* PolaroidCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PolaroidCollectionCell.xib; sourceTree = "<group>"; };
+		4BF3AE72245AFAB200659F75 /* PolaroidCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolaroidCollectionViewCell.swift; sourceTree = "<group>"; };
+		4BF3AE74245B0A1000659F75 /* Polaroid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polaroid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,8 @@
 				4BF3AE652458579800659F75 /* Recordacoes.storyboard */,
 				4BF3AE67245857A200659F75 /* Guias.storyboard */,
 				4BF3AE69245857B400659F75 /* LeiteMaterno.storyboard */,
+				4BF3AE70245AF49000659F75 /* PolaroidCollectionCell.xib */,
+				4BF3AE72245AFAB200659F75 /* PolaroidCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,6 +165,7 @@
 		4BF3AE6D2458744C00659F75 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4BF3AE74245B0A1000659F75 /* Polaroid.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -269,6 +278,7 @@
 				4BB79932245726D20015CFF6 /* LaunchScreen.storyboard in Resources */,
 				4BF3AE632458550E00659F75 /* TabBar.storyboard in Resources */,
 				4BB7992F245726D20015CFF6 /* Assets.xcassets in Resources */,
+				4BF3AE71245AF49000659F75 /* PolaroidCollectionCell.xib in Resources */,
 				4BF3AE662458579800659F75 /* Recordacoes.storyboard in Resources */,
 				4BF3AE6A245857B400659F75 /* LeiteMaterno.storyboard in Resources */,
 			);
@@ -295,9 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BF3AE73245AFAB200659F75 /* PolaroidCollectionViewCell.swift in Sources */,
 				4BB79926245726CF0015CFF6 /* AppDelegate.swift in Sources */,
 				4BF3AE6F245874A700659F75 /* RecordacoesViewController.swift in Sources */,
 				4BB79928245726CF0015CFF6 /* SceneDelegate.swift in Sources */,
+				4BF3AE75245B0A1000659F75 /* Polaroid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
