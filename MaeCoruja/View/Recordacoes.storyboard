@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3GZ-6p-1iE">
-                                <rect key="frame" x="0.0" y="117" width="414" height="570"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="643"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="s1g-ib-9ld">
                                     <size key="itemSize" width="154" height="145"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -25,7 +25,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundopapel" id="yAy-bm-MUC">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="570"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="643"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
                                 <cells>
@@ -44,30 +44,12 @@
                                     <outlet property="delegate" destination="iyR-PI-AFR" id="cGL-ZR-nzH"/>
                                 </connections>
                             </collectionView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="D1x-yQ-6gP">
-                                <rect key="frame" x="16" y="64" width="382" height="32"/>
-                                <segments>
-                                    <segment title="1"/>
-                                    <segment title="2"/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                </segments>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="CXa-BT-kgw" firstAttribute="trailing" secondItem="D1x-yQ-6gP" secondAttribute="trailing" constant="16" id="1q5-lr-YCo"/>
-                            <constraint firstItem="D1x-yQ-6gP" firstAttribute="top" secondItem="CXa-BT-kgw" secondAttribute="top" constant="20" id="GN6-tt-sBv"/>
-                            <constraint firstItem="D1x-yQ-6gP" firstAttribute="leading" secondItem="CXa-BT-kgw" secondAttribute="leading" constant="16" id="Jti-rN-zgL"/>
+                            <constraint firstItem="3GZ-6p-1iE" firstAttribute="top" secondItem="CXa-BT-kgw" secondAttribute="top" id="JyU-Tk-ATv"/>
                             <constraint firstItem="3GZ-6p-1iE" firstAttribute="leading" secondItem="CXa-BT-kgw" secondAttribute="leading" id="L65-g6-rQQ"/>
-                            <constraint firstItem="D1x-yQ-6gP" firstAttribute="centerX" secondItem="CXa-BT-kgw" secondAttribute="centerX" id="Mky-1y-xKn"/>
                             <constraint firstItem="CXa-BT-kgw" firstAttribute="trailing" secondItem="3GZ-6p-1iE" secondAttribute="trailing" id="MyM-zq-rRu"/>
-                            <constraint firstItem="3GZ-6p-1iE" firstAttribute="top" secondItem="D1x-yQ-6gP" secondAttribute="bottom" constant="22" id="eI4-zl-tU5"/>
                             <constraint firstItem="CXa-BT-kgw" firstAttribute="bottom" secondItem="3GZ-6p-1iE" secondAttribute="bottom" id="fzl-Tj-Oul"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CXa-BT-kgw"/>
