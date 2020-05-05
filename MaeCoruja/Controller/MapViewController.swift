@@ -23,6 +23,21 @@ class MapViewController: UIViewController {
         //Center the map in Fortaleza
         mapView.centerToLocation(initialLocation)
         
+        //Define the center of ceara
+        let cearaCenter = CLLocation(latitude: -5.196645, longitude: -39.482799)
+        
+        //Setting a region based on ceara center
+        let region = MKCoordinateRegion(center: cearaCenter.coordinate, latitudinalMeters: 50000, longitudinalMeters: 60000)
+        
+        //Setting a camera boundary based on the regin defined before
+        mapView.setCameraBoundary(MKMapView.CameraBoundary(coordinateRegion: region), animated: true)
+        
+        //Setting a zoom
+        let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 200000)
+        
+        //Applying zoom setting to the camera
+        mapView.setCameraZoomRange(zoomRange, animated: true)
+        
     }
     
 }

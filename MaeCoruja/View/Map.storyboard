@@ -16,15 +16,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sBr-s7-niK">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="sBr-s7-niK" firstAttribute="top" secondItem="3Gh-Pd-LIp" secondAttribute="top" id="3Cn-qx-jSM"/>
-                            <constraint firstItem="3Gh-Pd-LIp" firstAttribute="bottom" secondItem="sBr-s7-niK" secondAttribute="bottom" id="8S6-d3-IVK"/>
                             <constraint firstItem="sBr-s7-niK" firstAttribute="leading" secondItem="3Gh-Pd-LIp" secondAttribute="leading" id="MKb-qc-kgp"/>
-                            <constraint firstItem="3Gh-Pd-LIp" firstAttribute="trailing" secondItem="sBr-s7-niK" secondAttribute="trailing" id="N9k-Wr-0lO"/>
+                            <constraint firstItem="sBr-s7-niK" firstAttribute="trailing" secondItem="3Gh-Pd-LIp" secondAttribute="trailing" id="N9k-Wr-0lO"/>
+                            <constraint firstAttribute="bottom" secondItem="sBr-s7-niK" secondAttribute="bottom" id="ctT-py-Yfc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3Gh-Pd-LIp"/>
                     </view>

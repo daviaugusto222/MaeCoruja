@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		382384A82461C6D600FC766D /* MilkBanksAndCollectionPoints.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 382384A72461C6D600FC766D /* MilkBanksAndCollectionPoints.geojson */; };
 		38F5C4722460E0B000BF1EB2 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F5C4712460E0B000BF1EB2 /* Map.storyboard */; };
 		38F5C4742460E18E00BF1EB2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5C4732460E18E00BF1EB2 /* MapViewController.swift */; };
 		4BB79926245726CF0015CFF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB79925245726CF0015CFF6 /* AppDelegate.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		382384A72461C6D600FC766D /* MilkBanksAndCollectionPoints.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = MilkBanksAndCollectionPoints.geojson; sourceTree = "<group>"; };
 		38F5C4712460E0B000BF1EB2 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		38F5C4732460E18E00BF1EB2 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4BB79922245726CF0015CFF6 /* MaeCoruja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaeCoruja.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				4BF3AE74245B0A1000659F75 /* Polaroid.swift */,
+				382384A72461C6D600FC766D /* MilkBanksAndCollectionPoints.geojson */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BF3AE68245857A200659F75 /* Guias.storyboard in Resources */,
+				382384A82461C6D600FC766D /* MilkBanksAndCollectionPoints.geojson in Resources */,
 				4BB79932245726D20015CFF6 /* LaunchScreen.storyboard in Resources */,
 				4BF3AE632458550E00659F75 /* TabBar.storyboard in Resources */,
 				38F5C4722460E0B000BF1EB2 /* Map.storyboard in Resources */,
