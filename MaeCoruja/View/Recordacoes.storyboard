@@ -17,9 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundodeco" translatesAutoresizingMaskIntoConstraints="NO" id="dTX-52-MeL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3GZ-6p-1iE">
-                                <rect key="frame" x="0.0" y="110" width="414" height="577"/>
-                                <color key="backgroundColor" name="Ice"/>
+                                <rect key="frame" x="0.0" y="170.33333333333331" width="414" height="516.66666666666674"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="s1g-ib-9ld">
                                     <size key="itemSize" width="154" height="145"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -43,14 +45,14 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBR-jM-e5f">
-                                <rect key="frame" x="19.999999999999996" y="64" width="60.666666666666657" height="22"/>
+                                <rect key="frame" x="19.999999999999996" y="124.33333333333331" width="60.666666666666657" height="22"/>
                                 <color key="tintColor" name="Orange"/>
                                 <state key="normal" title="Filtro" image="line.horizontal.3.decrease.circle" catalog="system">
                                     <color key="titleColor" name="Orange"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Mq-jt-O62">
-                                <rect key="frame" x="309" y="64" width="85" height="22"/>
+                                <rect key="frame" x="309" y="124.33333333333331" width="85" height="22"/>
                                 <color key="tintColor" name="Orange"/>
                                 <state key="normal" title="Galeria" image="rectangle.3.offgrid.fill" catalog="system">
                                     <color key="titleColor" name="Orange"/>
@@ -60,12 +62,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="MBR-jM-e5f" firstAttribute="leading" secondItem="CXa-BT-kgw" secondAttribute="leading" constant="20" id="5ex-T8-Pn9"/>
+                            <constraint firstItem="dTX-52-MeL" firstAttribute="trailing" secondItem="CXa-BT-kgw" secondAttribute="trailing" id="845-PK-9L0"/>
                             <constraint firstItem="CXa-BT-kgw" firstAttribute="trailing" secondItem="8Mq-jt-O62" secondAttribute="trailing" constant="20" id="ASK-Tg-jMX"/>
+                            <constraint firstItem="dTX-52-MeL" firstAttribute="top" secondItem="Z6K-g0-sFM" secondAttribute="top" id="J1U-cb-Wg5"/>
                             <constraint firstItem="3GZ-6p-1iE" firstAttribute="leading" secondItem="CXa-BT-kgw" secondAttribute="leading" id="L65-g6-rQQ"/>
                             <constraint firstItem="CXa-BT-kgw" firstAttribute="trailing" secondItem="3GZ-6p-1iE" secondAttribute="trailing" id="MyM-zq-rRu"/>
+                            <constraint firstItem="dTX-52-MeL" firstAttribute="bottom" secondItem="CXa-BT-kgw" secondAttribute="bottom" id="SZ2-qC-cNy"/>
                             <constraint firstItem="8Mq-jt-O62" firstAttribute="top" secondItem="CXa-BT-kgw" secondAttribute="top" constant="20" id="WZL-W4-XwJ"/>
                             <constraint firstItem="3GZ-6p-1iE" firstAttribute="top" secondItem="CXa-BT-kgw" secondAttribute="top" constant="66" id="cwa-AI-A3z"/>
                             <constraint firstItem="CXa-BT-kgw" firstAttribute="bottom" secondItem="3GZ-6p-1iE" secondAttribute="bottom" id="fzl-Tj-Oul"/>
+                            <constraint firstItem="dTX-52-MeL" firstAttribute="leading" secondItem="CXa-BT-kgw" secondAttribute="leading" id="jtZ-kx-8eG"/>
                             <constraint firstItem="MBR-jM-e5f" firstAttribute="top" secondItem="CXa-BT-kgw" secondAttribute="top" constant="20" id="zXf-2k-2r1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CXa-BT-kgw"/>
@@ -73,9 +79,6 @@
                     <navigationItem key="navigationItem" title="Recordações" id="ZLV-lN-DcH">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3Af-2i-53y">
                             <color key="tintColor" name="Orange"/>
-                            <connections>
-                                <segue destination="cTP-11-S4W" kind="presentation" id="ptF-S2-kgP"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -86,14 +89,6 @@
             </objects>
             <point key="canvasLocation" x="997.10144927536237" y="114.1304347826087"/>
         </scene>
-        <!--AdicionarRecordacoes-->
-        <scene sceneID="dxO-7t-ILy">
-            <objects>
-                <viewControllerPlaceholder storyboardName="AdicionarRecordacoes" id="cTP-11-S4W" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JRc-rq-Zcf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1593" y="-58"/>
-        </scene>
         <!--Recordações-->
         <scene sceneID="lbi-SL-Utk">
             <objects>
@@ -102,7 +97,7 @@
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="lv4-Fw-5u9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="104.33333333333334"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="Ice"/>
                         <color key="barTintColor" name="Ice"/>
@@ -119,6 +114,7 @@
     </scenes>
     <resources>
         <image name="camera.on.rectangle.fill" catalog="system" width="128" height="96"/>
+        <image name="fundodeco" width="2250" height="3800"/>
         <image name="line.horizontal.3.decrease.circle" catalog="system" width="128" height="121"/>
         <image name="rectangle.3.offgrid.fill" catalog="system" width="128" height="81"/>
         <namedColor name="Ice">

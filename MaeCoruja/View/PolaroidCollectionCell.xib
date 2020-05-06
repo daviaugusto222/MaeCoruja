@@ -14,7 +14,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PdP-HZ-iWa">
-                    <rect key="frame" x="0.0" y="0.0" width="335" height="435"/>
+                    <rect key="frame" x="0.0" y="0.0" width="319" height="435"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="polaroidmol" translatesAutoresizingMaskIntoConstraints="NO" id="jD6-DI-BsM">
                             <rect key="frame" x="12" y="0.0" width="315" height="427"/>
@@ -53,21 +53,21 @@
                         <constraint firstItem="8ht-W5-GU2" firstAttribute="top" secondItem="XeL-ZA-qFG" secondAttribute="bottom" constant="15" id="ChJ-z7-H5M"/>
                         <constraint firstItem="XeL-ZA-qFG" firstAttribute="top" secondItem="PdP-HZ-iWa" secondAttribute="top" constant="21" id="ClQ-u1-tyh"/>
                         <constraint firstItem="jD6-DI-BsM" firstAttribute="leading" secondItem="PdP-HZ-iWa" secondAttribute="leading" constant="12" id="DUQ-M2-yRr"/>
-                        <constraint firstItem="jD6-DI-BsM" firstAttribute="centerX" secondItem="PdP-HZ-iWa" secondAttribute="centerX" constant="2" id="Fsb-AE-CNO"/>
+                        <constraint firstItem="jD6-DI-BsM" firstAttribute="centerX" secondItem="PdP-HZ-iWa" secondAttribute="centerX" constant="10" id="Fsb-AE-CNO"/>
                         <constraint firstItem="qH5-qZ-eo1" firstAttribute="width" secondItem="jD6-DI-BsM" secondAttribute="height" multiplier="36:61" id="Qkn-eo-8cV"/>
-                        <constraint firstItem="8ht-W5-GU2" firstAttribute="centerX" secondItem="PdP-HZ-iWa" secondAttribute="centerX" id="akv-3t-Fj3"/>
+                        <constraint firstItem="8ht-W5-GU2" firstAttribute="centerX" secondItem="PdP-HZ-iWa" secondAttribute="centerX" constant="8.25" id="akv-3t-Fj3"/>
                         <constraint firstAttribute="bottom" secondItem="XeL-ZA-qFG" secondAttribute="bottom" constant="91" id="b1i-CV-ow9"/>
-                        <constraint firstAttribute="width" secondItem="PdP-HZ-iWa" secondAttribute="height" multiplier="67:87" id="h1a-NJ-sda"/>
+                        <constraint firstAttribute="width" secondItem="PdP-HZ-iWa" secondAttribute="height" multiplier="67:87" constant="-16" id="h1a-NJ-sda"/>
                         <constraint firstItem="jD6-DI-BsM" firstAttribute="top" secondItem="PdP-HZ-iWa" secondAttribute="top" id="mMK-xj-Wvh"/>
                         <constraint firstItem="XeL-ZA-qFG" firstAttribute="leading" secondItem="PdP-HZ-iWa" secondAttribute="leading" constant="30" id="mYc-ph-FeF"/>
-                        <constraint firstItem="XeL-ZA-qFG" firstAttribute="centerX" secondItem="PdP-HZ-iWa" secondAttribute="centerX" id="ran-Zi-7hE"/>
+                        <constraint firstItem="XeL-ZA-qFG" firstAttribute="centerX" secondItem="PdP-HZ-iWa" secondAttribute="centerX" constant="8" id="ran-Zi-7hE"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="PdP-HZ-iWa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="68S-ou-F0z"/>
-                <constraint firstItem="PdP-HZ-iWa" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="K68-Xu-rzD"/>
+                <constraint firstItem="PdP-HZ-iWa" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-16" id="K68-Xu-rzD"/>
                 <constraint firstItem="PdP-HZ-iWa" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Tix-Rl-xiA"/>
                 <constraint firstItem="PdP-HZ-iWa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="r42-Oh-gpq"/>
             </constraints>

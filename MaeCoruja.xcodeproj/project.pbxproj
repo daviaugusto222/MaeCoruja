@@ -154,12 +154,9 @@
 				4BB79930245726D20015CFF6 /* LaunchScreen.storyboard */,
 				4BF3AE622458550E00659F75 /* TabBar.storyboard */,
 				4BF3AE652458579800659F75 /* Recordacoes.storyboard */,
-				4B412E472461923300F7BF80 /* AdicionarRecordacoes.storyboard */,
-				4B412E492461936B00F7BF80 /* GaleriaRecordacoes.storyboard */,
 				4BF3AE67245857A200659F75 /* Guias.storyboard */,
 				4BF3AE69245857B400659F75 /* LeiteMaterno.storyboard */,
 				4BF3AE70245AF49000659F75 /* PolaroidCollectionCell.xib */,
-				4BF3AE72245AFAB200659F75 /* PolaroidCollectionViewCell.swift */,
 				38F5C4712460E0B000BF1EB2 /* Map.storyboard */,
 			);
 			path = View;
@@ -168,6 +165,7 @@
 		4BF3AE6C2458743B00659F75 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4BF3AE72245AFAB200659F75 /* PolaroidCollectionViewCell.swift */,
 				4BF3AE6E245874A700659F75 /* RecordacoesViewController.swift */,
 				38F5C4732460E18E00BF1EB2 /* MapViewController.swift */,
 			);
@@ -291,8 +289,6 @@
 				4BF3AE68245857A200659F75 /* Guias.storyboard in Resources */,
 				382384A82461C6D600FC766D /* MilkBanksAndCollectionPoints.geojson in Resources */,
 				4BB79932245726D20015CFF6 /* LaunchScreen.storyboard in Resources */,
-				4B412E4A2461936B00F7BF80 /* GaleriaRecordacoes.storyboard in Resources */,
-				4B412E482461923300F7BF80 /* AdicionarRecordacoes.storyboard in Resources */,
 				4BF3AE632458550E00659F75 /* TabBar.storyboard in Resources */,
 				38F5C4722460E0B000BF1EB2 /* Map.storyboard in Resources */,
 				4BB7992F245726D20015CFF6 /* Assets.xcassets in Resources */,
