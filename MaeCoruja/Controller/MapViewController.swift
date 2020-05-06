@@ -17,6 +17,8 @@ class MapViewController: UIViewController {
     override func viewDidLoad(){
         super.viewDidLoad()
         
+        mapView.delegate = self
+        
         //Define the Fortaleza latitude and longitude as initial
         let initialLocation = CLLocation(latitude: -3.71839, longitude: -38.5434)
         
