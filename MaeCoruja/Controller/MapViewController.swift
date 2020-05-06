@@ -60,25 +60,28 @@ private extension MKMapView {
 
 extension MapViewController: MKMapViewDelegate{
     
-    
+    //Creating a different view for each Annotation
     func mapView(
         _mapView: MKMapView,
         viewFor annotation: MKAnnotation
         ) -> MKAnnotationView? {
         
+        //Setting this view only for annotations of type MilkBanksAndCollectionPoints
         guard let annotation = annotation as? MilkBanksAndCollectionPoins else {
             return nil
         }
         
+        //Setting an identifier
         let identifier = "milkbanksandcollectionpoints"
         var view: MKMarkerAnnotationView
         
+        //Making the view reusable
         if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView {
             
             dequeuedView.annotation = annotation
             view = dequeuedView
         } else {
-            
+            //If is not possible reuse an view, create a new one
             view = MKMarkerAnnotationView(
               annotation: annotation,
               reuseIdentifier: identifier)
@@ -88,6 +91,7 @@ extension MapViewController: MKMapViewDelegate{
         
         }
         
+        //return the view
         return view
         
     }

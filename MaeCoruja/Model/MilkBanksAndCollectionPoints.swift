@@ -12,13 +12,13 @@ import MapKit
 
 class MilkBanksAndCollectionPoins: NSObject, MKAnnotation {
     
-    
+    //Creating the class properties
     let title: String?
     let locationName: String?
     let discipline: String?
     let coordinate: CLLocationCoordinate2D
     
-    
+    //Initializing the properties
     init(
         title: String?,
         locationName: String?,
@@ -35,6 +35,7 @@ class MilkBanksAndCollectionPoins: NSObject, MKAnnotation {
         
     }
     
+    //Setting a subtitle
     var subtitle: String?{
         
         return locationName
