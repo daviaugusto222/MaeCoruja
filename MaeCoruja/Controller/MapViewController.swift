@@ -13,6 +13,8 @@ class MapViewController: UIViewController {
     
     @IBOutlet private var mapView: MKMapView!
     
+    private var milkbanksandcollectionpoints: [MilkBanksAndCollectionPoins] = []
+    
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -40,6 +42,38 @@ class MapViewController: UIViewController {
         //Applying zoom setting to the camera
         mapView.setCameraZoomRange(zoomRange, animated: true)
         
+        //Loading the data
+        loadInitialData()
+        
+        //Adding annotations to the map
+        mapView.addAnnotations(milkbanksandcollectionpoints)
+        
+    }
+    
+    //Func to load data to the map
+    private func loadInitialData() {
+
+      guard
+        let fileName = Bundle.main.url(forResource: "MilkBanksAndCollectionPoints", withExtension: "geojson"),
+        let milkAndCollectionData = try? Data(contentsOf: fileName)
+        else {
+          return
+      }
+
+      do {
+        
+        let features = try MKGeoJSONDecoder()
+          .decode(milkAndCollectionData)
+          .compactMap { $0 as? MKGeoJSONFeature }
+        
+        let validWorks = features.compactMap(MilkBanksAndCollectionPoins.init)
+        
+        milkbanksandcollectionpoints.append(contentsOf: validWorks)
+      } catch {
+        
+        print("Unexpected error: \(error).")
+      
+        }
     }
     
 }

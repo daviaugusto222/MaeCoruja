@@ -35,6 +35,25 @@ class MilkBanksAndCollectionPoins: NSObject, MKAnnotation {
         
     }
     
+    //Init to get data from a json
+    init?(feature: MKGeoJSONFeature) {
+      guard
+        let point = feature.geometry.first as? MKPointAnnotation,
+        let propertiesData = feature.properties,
+        let json = try? JSONSerialization.jsonObject(with: propertiesData),
+        let properties = json as? [String: Any]
+        else {
+          return nil
+      }
+
+      // 3
+      title = properties["title"] as? String
+      locationName = properties["location"] as? String
+      discipline = properties["discipline"] as? String
+      coordinate = point.coordinate
+      super.init()
+    }
+    
     //Setting a subtitle
     var subtitle: String?{
         
