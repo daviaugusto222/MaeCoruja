@@ -175,9 +175,9 @@
 		4BF3AE6D2458744C00659F75 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				383498AF2463018600E9255B /* MilkBanksAndCollectionPoints.geojson */,
 				4BF3AE74245B0A1000659F75 /* Polaroid.swift */,
 				382384A924622D3200FC766D /* MilkBanksAndCollectionPoints.swift */,
+				383498AF2463018600E9255B /* MilkBanksAndCollectionPoints.geojson */,
 			);
 			path = Model;
 			sourceTree = "<group>";
