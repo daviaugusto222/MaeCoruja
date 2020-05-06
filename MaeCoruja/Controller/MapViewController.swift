@@ -43,10 +43,18 @@ class MapViewController: UIViewController {
         mapView.setCameraZoomRange(zoomRange, animated: true)
         
         //Loading the data
-        loadInitialData()
+        //loadInitialData()
         
         //Adding annotations to the map
-        mapView.addAnnotations(milkbanksandcollectionpoints)
+        //mapView.addAnnotations(milkbanksandcollectionpoints)
+        
+        let milkbanksandcollectionpoints = MilkBanksAndCollectionPoins(
+            title: "Banco de Leite Humano do Hospital Geral de Fortaleza",
+            locationName: "Hospital Geral de Fortaleza",
+            discipline: "Banco de Leite",
+            coordinate: CLLocationCoordinate2D(latitude: -3.739328, longitude: -38.476035)
+        )
+        mapView.addAnnotation(milkbanksandcollectionpoints)
         
     }
     
@@ -98,7 +106,7 @@ extension MapViewController: MKMapViewDelegate{
     
     //Creating a different view for each Annotation
     func mapView(
-        _mapView: MKMapView,
+        _ mapView: MKMapView,
         viewFor annotation: MKAnnotation
         ) -> MKAnnotationView? {
         
