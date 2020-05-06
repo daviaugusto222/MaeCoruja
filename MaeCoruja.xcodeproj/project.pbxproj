@@ -25,6 +25,9 @@
 		4BF3AE71245AF49000659F75 /* PolaroidCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BF3AE70245AF49000659F75 /* PolaroidCollectionCell.xib */; };
 		4BF3AE73245AFAB200659F75 /* PolaroidCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF3AE72245AFAB200659F75 /* PolaroidCollectionViewCell.swift */; };
 		4BF3AE75245B0A1000659F75 /* Polaroid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF3AE74245B0A1000659F75 /* Polaroid.swift */; };
+		E63F67082463148B00E91AE0 /* CardMilkDonationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63F67072463148B00E91AE0 /* CardMilkDonationTableViewCell.xib */; };
+		E63F670A246314ED00E91AE0 /* CardMilkDonationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63F6709246314ED00E91AE0 /* CardMilkDonationViewCell.swift */; };
+		E63F670E2463221D00E91AE0 /* LeiteMaternoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63F670D2463221D00E91AE0 /* LeiteMaternoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		4BF3AE70245AF49000659F75 /* PolaroidCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PolaroidCollectionCell.xib; sourceTree = "<group>"; };
 		4BF3AE72245AFAB200659F75 /* PolaroidCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolaroidCollectionViewCell.swift; sourceTree = "<group>"; };
 		4BF3AE74245B0A1000659F75 /* Polaroid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polaroid.swift; sourceTree = "<group>"; };
+		E63F67072463148B00E91AE0 /* CardMilkDonationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardMilkDonationTableViewCell.xib; sourceTree = "<group>"; };
+		E63F6709246314ED00E91AE0 /* CardMilkDonationViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMilkDonationViewCell.swift; sourceTree = "<group>"; };
+		E63F670D2463221D00E91AE0 /* LeiteMaternoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeiteMaternoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +165,8 @@
 				4BF3AE70245AF49000659F75 /* PolaroidCollectionCell.xib */,
 				4BF3AE72245AFAB200659F75 /* PolaroidCollectionViewCell.swift */,
 				38F5C4712460E0B000BF1EB2 /* Map.storyboard */,
+				E63F67072463148B00E91AE0 /* CardMilkDonationTableViewCell.xib */,
+				E63F6709246314ED00E91AE0 /* CardMilkDonationViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 			children = (
 				4BF3AE6E245874A700659F75 /* RecordacoesViewController.swift */,
 				38F5C4732460E18E00BF1EB2 /* MapViewController.swift */,
+				E63F670D2463221D00E91AE0 /* LeiteMaternoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -292,6 +301,7 @@
 				383498B02463018600E9255B /* MilkBanksAndCollectionPoints.geojson in Resources */,
 				38F5C4722460E0B000BF1EB2 /* Map.storyboard in Resources */,
 				4BB7992F245726D20015CFF6 /* Assets.xcassets in Resources */,
+				E63F67082463148B00E91AE0 /* CardMilkDonationTableViewCell.xib in Resources */,
 				4BF3AE71245AF49000659F75 /* PolaroidCollectionCell.xib in Resources */,
 				4BF3AE662458579800659F75 /* Recordacoes.storyboard in Resources */,
 				4BF3AE6A245857B400659F75 /* LeiteMaterno.storyboard in Resources */,
@@ -319,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E63F670E2463221D00E91AE0 /* LeiteMaternoViewController.swift in Sources */,
 				4BF3AE73245AFAB200659F75 /* PolaroidCollectionViewCell.swift in Sources */,
 				38F5C4742460E18E00BF1EB2 /* MapViewController.swift in Sources */,
 				382384AA24622D3200FC766D /* MilkBanksAndCollectionPoints.swift in Sources */,
@@ -326,6 +337,7 @@
 				4BF3AE6F245874A700659F75 /* RecordacoesViewController.swift in Sources */,
 				4BB79928245726CF0015CFF6 /* SceneDelegate.swift in Sources */,
 				4BF3AE75245B0A1000659F75 /* Polaroid.swift in Sources */,
+				E63F670A246314ED00E91AE0 /* CardMilkDonationViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
