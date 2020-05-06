@@ -1,26 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gpl-GG-haD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EZy-Cw-TqJ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="J7R-KC-lCY">
+        <!--Galeria-->
+        <scene sceneID="ptS-hr-9xh">
             <objects>
-                <viewController id="Gpl-GG-haD" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HFP-LA-fga">
+                <viewController title="Galeria" id="EZy-Cw-TqJ" customClass="GaleriaViewController" customModule="MaeCoruja" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LPl-pA-OzU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Q5J-b6-SUm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wUy-FS-ojA">
+                                    <size key="itemSize" width="215" height="215"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="e6O-tM-vUc">
+                                        <rect key="frame" x="0.0" y="0.0" width="215" height="215"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VNI-PI-I6A">
+                                            <rect key="frame" x="0.0" y="0.0" width="215" height="215"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="215" height="215"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="EZy-Cw-TqJ" id="8Oa-yT-d5o"/>
+                                    <outlet property="delegate" destination="EZy-Cw-TqJ" id="lIN-Wm-o2c"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="SVT-Fq-Ly1"/>
+                        <constraints>
+                            <constraint firstItem="Q5J-b6-SUm" firstAttribute="top" secondItem="aLJ-Bz-Vvt" secondAttribute="top" id="EXV-PG-vns"/>
+                            <constraint firstItem="aLJ-Bz-Vvt" firstAttribute="trailing" secondItem="Q5J-b6-SUm" secondAttribute="trailing" id="TV0-pO-OmF"/>
+                            <constraint firstItem="aLJ-Bz-Vvt" firstAttribute="bottom" secondItem="Q5J-b6-SUm" secondAttribute="bottom" id="Thl-Lg-CAE"/>
+                            <constraint firstItem="Q5J-b6-SUm" firstAttribute="leading" secondItem="aLJ-Bz-Vvt" secondAttribute="leading" id="lAI-ww-dRY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aLJ-Bz-Vvt"/>
                     </view>
+                    <connections>
+                        <outlet property="galeriaCollectionView" destination="Q5J-b6-SUm" id="6o7-0u-YQH"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9ZM-hT-wbR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8jR-vg-yqr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="248" y="100"/>
+            <point key="canvasLocation" x="60.869565217391312" y="40.848214285714285"/>
         </scene>
     </scenes>
 </document>

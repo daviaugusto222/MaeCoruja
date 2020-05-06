@@ -1,19 +1,20 @@
 //
-//  RecordacoesViewController.swift
+//  GaleriaViewController.swift
 //  MaeCoruja
 //
-//  Created by David Augusto on 28/04/20.
+//  Created by David Augusto on 06/05/20.
 //  Copyright © 2020 David Augusto. All rights reserved.
 //
 
 import UIKit
 
-class RecordacoesViewController: UIViewController {
+class GaleriaViewController: UIViewController {
 
     
-    @IBOutlet weak var recordacoesCollection: UICollectionView!
+    @IBOutlet weak var galeriaCollectionView: UICollectionView!
     
-    
+    @IBOutlet weak var foto: UIImageView!
+    @IBOutlet weak var tituloLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +24,13 @@ class RecordacoesViewController: UIViewController {
     
     private func configureCollection(){
         let collectionCellNib = UINib(nibName: PolaroidCollectionViewCell.nibName, bundle: nil)
-        
-        recordacoesCollection.register(collectionCellNib, forCellWithReuseIdentifier: PolaroidCollectionViewCell.identifier)
+
+        galeriaCollectionView.register(collectionCellNib, forCellWithReuseIdentifier: PolaroidCollectionViewCell.identifier)
     }
 
 }
 
-extension RecordacoesViewController: UICollectionViewDataSource, UICollectionViewDelegate{
+extension GaleriaViewController: UICollectionViewDataSource, UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
@@ -45,8 +46,8 @@ extension RecordacoesViewController: UICollectionViewDataSource, UICollectionVie
     
 }
 
-extension RecordacoesViewController: UICollectionViewDelegateFlowLayout {
+extension GaleriaViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width/1.1, height: view.frame.height/1.5)
+        return CGSize(width: view.frame.width/2, height: view.frame.height/3)
     }
 }
