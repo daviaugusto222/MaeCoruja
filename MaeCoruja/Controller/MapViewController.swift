@@ -29,13 +29,13 @@ class MapViewController: UIViewController {
         let cearaCenter = CLLocation(latitude: -5.196645, longitude: -39.482799)
         
         //Setting a region based on ceara center
-        let region = MKCoordinateRegion(center: cearaCenter.coordinate, latitudinalMeters: 50000, longitudinalMeters: 60000)
+        let region = MKCoordinateRegion(center: cearaCenter.coordinate, latitudinalMeters: 500000, longitudinalMeters: 600000)
         
         //Setting a camera boundary based on the regin defined before
         mapView.setCameraBoundary(MKMapView.CameraBoundary(coordinateRegion: region), animated: true)
         
         //Setting a zoom
-        let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 200000)
+        let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 1200000)
         
         //Applying zoom setting to the camera
         mapView.setCameraZoomRange(zoomRange, animated: true)
@@ -49,7 +49,7 @@ class MapViewController: UIViewController {
 private extension MKMapView {
   func centerToLocation(
     _ location: CLLocation,
-    regionRadius: CLLocationDistance = 1000
+    regionRadius: CLLocationDistance = 1000000
   ) {
     let coordinateRegion = MKCoordinateRegion(
       center: location.coordinate,
