@@ -43,18 +43,18 @@ class MapViewController: UIViewController {
         mapView.setCameraZoomRange(zoomRange, animated: true)
         
         //Loading the data
-        //loadInitialData()
+        loadInitialData()
         
         //Adding annotations to the map
-        //mapView.addAnnotations(milkbanksandcollectionpoints)
+        mapView.addAnnotations(milkbanksandcollectionpoints)
         
-        let milkbanksandcollectionpoints = MilkBanksAndCollectionPoins(
-            title: "Banco de Leite Humano do Hospital Geral de Fortaleza",
-            locationName: "Hospital Geral de Fortaleza",
-            discipline: "Banco de Leite",
-            coordinate: CLLocationCoordinate2D(latitude: -3.739328, longitude: -38.476035)
-        )
-        mapView.addAnnotation(milkbanksandcollectionpoints)
+//        let milkbanksandcollectionpoints = MilkBanksAndCollectionPoins(
+//            title: "Banco de Leite Humano do Hospital Geral de Fortaleza",
+//            locationName: "Hospital Geral de Fortaleza",
+//            discipline: "Banco de Leite",
+//            coordinate: CLLocationCoordinate2D(latitude: -3.739328, longitude: -38.476035)
+//        )
+//        mapView.addAnnotation(milkbanksandcollectionpoints)
         
     }
     
@@ -65,6 +65,7 @@ class MapViewController: UIViewController {
         let fileName = Bundle.main.url(forResource: "MilkBanksAndCollectionPoints", withExtension: "geojson"),
         let milkAndCollectionData = try? Data(contentsOf: fileName)
         else {
+            print("Não foi possível carregar o geojson")
           return
       }
 
