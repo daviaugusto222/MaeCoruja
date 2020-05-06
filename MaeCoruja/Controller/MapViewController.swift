@@ -98,4 +98,20 @@ extension MapViewController: MKMapViewDelegate{
         
     }
     
+    //Aux function to handle the map app button on annotations
+    func mapView(
+      _ mapView: MKMapView,
+      annotationView view: MKAnnotationView,
+      calloutAccessoryControlTapped control: UIControl
+    ) {
+      guard let milkbanksandcollectionpoints = view.annotation as? MilkBanksAndCollectionPoins else {
+        return
+      }
+
+      let launchOptions = [
+        MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving
+      ]
+      milkbanksandcollectionpoints.mapItem?.openInMaps(launchOptions: launchOptions)
+    }
+    
 }

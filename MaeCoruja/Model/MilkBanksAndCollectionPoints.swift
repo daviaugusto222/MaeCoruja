@@ -7,8 +7,8 @@
 //
 
 import Foundation
-
 import MapKit
+import Contacts
 
 class MilkBanksAndCollectionPoins: NSObject, MKAnnotation {
     
@@ -40,6 +40,21 @@ class MilkBanksAndCollectionPoins: NSObject, MKAnnotation {
         
         return locationName
         
+    }
+    
+    //Creating a mapItem to open maps app
+    var mapItem: MKMapItem? {
+      guard let location = locationName else {
+        return nil
+      }
+
+      let addressDict = [CNPostalAddressStreetKey: location]
+      let placemark = MKPlacemark(
+        coordinate: coordinate,
+        addressDictionary: addressDict)
+      let mapItem = MKMapItem(placemark: placemark)
+      mapItem.name = title
+      return mapItem
     }
     
     
