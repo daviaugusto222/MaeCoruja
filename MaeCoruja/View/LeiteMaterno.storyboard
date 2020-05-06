@@ -17,11 +17,27 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ea9-1F-aDS"/>
                     </view>
-                    <navigationItem key="navigationItem" id="6Ss-gQ-zjW"/>
+                    <navigationItem key="navigationItem" id="6Ss-gQ-zjW">
+                        <barButtonItem key="rightBarButtonItem" title="Map" id="zNd-lo-Wjb" userLabel="Map">
+                            <connections>
+                                <segue destination="9j8-Fs-nOW" kind="show" id="DY0-xd-Qsx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djS-0f-iVN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1039.1304347826087" y="83.705357142857139"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="Ccy-Kk-Rvb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Map" id="9j8-Fs-nOW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pc3-1c-s6A"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nbd-qR-Mlr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1775" y="35"/>
         </scene>
         <!--Leite Materno-->
         <scene sceneID="qxK-Iu-IhY">

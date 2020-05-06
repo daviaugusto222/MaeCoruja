@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B412E482461923300F7BF80 /* AdicionarRecordacoes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B412E472461923300F7BF80 /* AdicionarRecordacoes.storyboard */; };
-		4B412E4A2461936B00F7BF80 /* GaleriaRecordacoes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B412E492461936B00F7BF80 /* GaleriaRecordacoes.storyboard */; };
+		382384A82461C6D600FC766D /* MilkBanksAndCollectionPoints.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 382384A72461C6D600FC766D /* MilkBanksAndCollectionPoints.geojson */; };
+		382384AA24622D3200FC766D /* MilkBanksAndCollectionPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382384A924622D3200FC766D /* MilkBanksAndCollectionPoints.swift */; };
+		38F5C4722460E0B000BF1EB2 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F5C4712460E0B000BF1EB2 /* Map.storyboard */; };
+		38F5C4742460E18E00BF1EB2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5C4732460E18E00BF1EB2 /* MapViewController.swift */; };
 		4BB79926245726CF0015CFF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB79925245726CF0015CFF6 /* AppDelegate.swift */; };
 		4BB79928245726CF0015CFF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB79927245726CF0015CFF6 /* SceneDelegate.swift */; };
 		4BB7992F245726D20015CFF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BB7992E245726D20015CFF6 /* Assets.xcassets */; };
@@ -43,8 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4B412E472461923300F7BF80 /* AdicionarRecordacoes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdicionarRecordacoes.storyboard; sourceTree = "<group>"; };
-		4B412E492461936B00F7BF80 /* GaleriaRecordacoes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GaleriaRecordacoes.storyboard; sourceTree = "<group>"; };
+		382384A72461C6D600FC766D /* MilkBanksAndCollectionPoints.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = MilkBanksAndCollectionPoints.geojson; sourceTree = "<group>"; };
+		382384A924622D3200FC766D /* MilkBanksAndCollectionPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkBanksAndCollectionPoints.swift; sourceTree = "<group>"; };
+		38F5C4712460E0B000BF1EB2 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		38F5C4732460E18E00BF1EB2 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4BB79922245726CF0015CFF6 /* MaeCoruja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaeCoruja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB79925245726CF0015CFF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BB79927245726CF0015CFF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 				4BF3AE69245857B400659F75 /* LeiteMaterno.storyboard */,
 				4BF3AE70245AF49000659F75 /* PolaroidCollectionCell.xib */,
 				4BF3AE72245AFAB200659F75 /* PolaroidCollectionViewCell.swift */,
+				38F5C4712460E0B000BF1EB2 /* Map.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				4BF3AE6E245874A700659F75 /* RecordacoesViewController.swift */,
+				38F5C4732460E18E00BF1EB2 /* MapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -172,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				4BF3AE74245B0A1000659F75 /* Polaroid.swift */,
+				382384A72461C6D600FC766D /* MilkBanksAndCollectionPoints.geojson */,
+				382384A924622D3200FC766D /* MilkBanksAndCollectionPoints.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -281,10 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BF3AE68245857A200659F75 /* Guias.storyboard in Resources */,
+				382384A82461C6D600FC766D /* MilkBanksAndCollectionPoints.geojson in Resources */,
 				4BB79932245726D20015CFF6 /* LaunchScreen.storyboard in Resources */,
 				4B412E4A2461936B00F7BF80 /* GaleriaRecordacoes.storyboard in Resources */,
 				4B412E482461923300F7BF80 /* AdicionarRecordacoes.storyboard in Resources */,
 				4BF3AE632458550E00659F75 /* TabBar.storyboard in Resources */,
+				38F5C4722460E0B000BF1EB2 /* Map.storyboard in Resources */,
 				4BB7992F245726D20015CFF6 /* Assets.xcassets in Resources */,
 				4BF3AE71245AF49000659F75 /* PolaroidCollectionCell.xib in Resources */,
 				4BF3AE662458579800659F75 /* Recordacoes.storyboard in Resources */,
@@ -314,6 +324,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BF3AE73245AFAB200659F75 /* PolaroidCollectionViewCell.swift in Sources */,
+				38F5C4742460E18E00BF1EB2 /* MapViewController.swift in Sources */,
+				382384AA24622D3200FC766D /* MilkBanksAndCollectionPoints.swift in Sources */,
 				4BB79926245726CF0015CFF6 /* AppDelegate.swift in Sources */,
 				4BF3AE6F245874A700659F75 /* RecordacoesViewController.swift in Sources */,
 				4BB79928245726CF0015CFF6 /* SceneDelegate.swift in Sources */,
