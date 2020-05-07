@@ -76,6 +76,20 @@ class MilkBanksAndCollectionPoins: NSObject, MKAnnotation {
       return mapItem
     }
     
+    var image: UIImage {
+      guard let name = discipline else {
+        return #imageLiteral(resourceName: "Banco de Leite")
+      }
+
+      switch name {
+      case "Banco de Leite":
+        return #imageLiteral(resourceName: "Banco de Leite")
+      case "Ponto de Coleta":
+        return #imageLiteral(resourceName: "Ponto de Coleta")
+      default:
+        return #imageLiteral(resourceName: "Banco de Leite")
+      }
+    }
     
     
 }

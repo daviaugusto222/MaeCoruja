@@ -37,8 +37,9 @@ class AdicionarViewController: UIViewController{
     
     @objc func save(){
         print("Salvou !")
-        let pol = Polaroid.createPolaroid()
+        let pol = Polaroid.init(titulo: tituloTextField.text!, foto: fotoImageView.image!, data: "07.05.2020", texto: textoRecordacao.text)
         delegate?.addMomment(moment: pol)
+        navigationController?.popViewController(animated: true)
         self.dismiss(animated: true, completion: nil)
     }
     
