@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B82C5ED24643F6B00730D03 /* ComoDoarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82C5EA24643F6B00730D03 /* ComoDoarViewController.swift */; };
-		0B82C5EE24643F6B00730D03 /* ConteudoGuiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82C5EB24643F6B00730D03 /* ConteudoGuiaViewController.swift */; };
-		0B82C5EF24643F6B00730D03 /* VisualizarCategoriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82C5EC24643F6B00730D03 /* VisualizarCategoriaViewController.swift */; };
 		0B82C5F624643F9000730D03 /* ContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B82C5F124643F9000730D03 /* ContentTableViewCell.xib */; };
 		0B82C5F724643F9000730D03 /* leiteMaterno.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B82C5F324643F9000730D03 /* leiteMaterno.png */; };
 		0B82C5F824643F9000730D03 /* ContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82C5F424643F9000730D03 /* ContentTableViewCell.swift */; };
@@ -20,6 +17,9 @@
 		0B82C6052464400A00730D03 /* VisualizarCategoria.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B82C5FF2464400A00730D03 /* VisualizarCategoria.storyboard */; };
 		0B82C6062464400A00730D03 /* VisualizarCategoriaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82C6002464400A00730D03 /* VisualizarCategoriaTableViewCell.swift */; };
 		0B82C6072464400A00730D03 /* VisualizarCategoriaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B82C6012464400A00730D03 /* VisualizarCategoriaTableViewCell.xib */; };
+		0B82C60B246458C100730D03 /* ComoDoarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82C608246458C100730D03 /* ComoDoarViewController.swift */; };
+		0B82C60C246458C100730D03 /* ConteudoGuiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82C609246458C100730D03 /* ConteudoGuiaViewController.swift */; };
+		0B82C60D246458C100730D03 /* VisualizarCategoriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82C60A246458C100730D03 /* VisualizarCategoriaViewController.swift */; };
 		382384AA24622D3200FC766D /* MilkBanksAndCollectionPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382384A924622D3200FC766D /* MilkBanksAndCollectionPoints.swift */; };
 		383498B02463018600E9255B /* MilkBanksAndCollectionPoints.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 383498AF2463018600E9255B /* MilkBanksAndCollectionPoints.geojson */; };
 		38F5C4722460E0B000BF1EB2 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F5C4712460E0B000BF1EB2 /* Map.storyboard */; };
@@ -67,9 +67,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B82C5EA24643F6B00730D03 /* ComoDoarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ComoDoarViewController.swift; path = ../../../Testes/Testes/Controller/ComoDoarViewController.swift; sourceTree = "<group>"; };
-		0B82C5EB24643F6B00730D03 /* ConteudoGuiaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConteudoGuiaViewController.swift; path = ../../../Testes/Testes/Controller/ConteudoGuiaViewController.swift; sourceTree = "<group>"; };
-		0B82C5EC24643F6B00730D03 /* VisualizarCategoriaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VisualizarCategoriaViewController.swift; path = ../../../Testes/Testes/Controller/VisualizarCategoriaViewController.swift; sourceTree = "<group>"; };
 		0B82C5F124643F9000730D03 /* ContentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentTableViewCell.xib; sourceTree = "<group>"; };
 		0B82C5F324643F9000730D03 /* leiteMaterno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leiteMaterno.png; sourceTree = "<group>"; };
 		0B82C5F424643F9000730D03 /* ContentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentTableViewCell.swift; sourceTree = "<group>"; };
@@ -80,6 +77,9 @@
 		0B82C5FF2464400A00730D03 /* VisualizarCategoria.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VisualizarCategoria.storyboard; sourceTree = "<group>"; };
 		0B82C6002464400A00730D03 /* VisualizarCategoriaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualizarCategoriaTableViewCell.swift; sourceTree = "<group>"; };
 		0B82C6012464400A00730D03 /* VisualizarCategoriaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisualizarCategoriaTableViewCell.xib; sourceTree = "<group>"; };
+		0B82C608246458C100730D03 /* ComoDoarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComoDoarViewController.swift; sourceTree = "<group>"; };
+		0B82C609246458C100730D03 /* ConteudoGuiaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConteudoGuiaViewController.swift; sourceTree = "<group>"; };
+		0B82C60A246458C100730D03 /* VisualizarCategoriaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualizarCategoriaViewController.swift; sourceTree = "<group>"; };
 		382384A924622D3200FC766D /* MilkBanksAndCollectionPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkBanksAndCollectionPoints.swift; sourceTree = "<group>"; };
 		383498AF2463018600E9255B /* MilkBanksAndCollectionPoints.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MilkBanksAndCollectionPoints.geojson; sourceTree = "<group>"; };
 		38F5C4712460E0B000BF1EB2 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
@@ -259,9 +259,9 @@
 		4BF3AE6C2458743B00659F75 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0B82C5EA24643F6B00730D03 /* ComoDoarViewController.swift */,
-				0B82C5EB24643F6B00730D03 /* ConteudoGuiaViewController.swift */,
-				0B82C5EC24643F6B00730D03 /* VisualizarCategoriaViewController.swift */,
+				0B82C608246458C100730D03 /* ComoDoarViewController.swift */,
+				0B82C609246458C100730D03 /* ConteudoGuiaViewController.swift */,
+				0B82C60A246458C100730D03 /* VisualizarCategoriaViewController.swift */,
 				4BF3AE72245AFAB200659F75 /* PolaroidCollectionViewCell.swift */,
 				4BF3AE6E245874A700659F75 /* RecordacoesViewController.swift */,
 				38F5C4732460E18E00BF1EB2 /* MapViewController.swift */,
@@ -436,18 +436,18 @@
 				0B82C6022464400A00730D03 /* ConteudoGuiaTableViewCell.swift in Sources */,
 				38F5C4742460E18E00BF1EB2 /* MapViewController.swift in Sources */,
 				0B82C5F824643F9000730D03 /* ContentTableViewCell.swift in Sources */,
+				0B82C60C246458C100730D03 /* ConteudoGuiaViewController.swift in Sources */,
 				4B4E70542462C89B00A539A9 /* GaleriaViewController.swift in Sources */,
-				0B82C5ED24643F6B00730D03 /* ComoDoarViewController.swift in Sources */,
 				382384AA24622D3200FC766D /* MilkBanksAndCollectionPoints.swift in Sources */,
 				4B4E705C2463647700A539A9 /* GaleriaCollectionViewCell.swift in Sources */,
 				4BB79926245726CF0015CFF6 /* AppDelegate.swift in Sources */,
-				0B82C5EE24643F6B00730D03 /* ConteudoGuiaViewController.swift in Sources */,
 				4B4E70582462CF7300A539A9 /* AdicionarViewController.swift in Sources */,
+				0B82C60B246458C100730D03 /* ComoDoarViewController.swift in Sources */,
 				4BF3AE6F245874A700659F75 /* RecordacoesViewController.swift in Sources */,
 				4BB79928245726CF0015CFF6 /* SceneDelegate.swift in Sources */,
 				4BF3AE75245B0A1000659F75 /* Polaroid.swift in Sources */,
-				0B82C5EF24643F6B00730D03 /* VisualizarCategoriaViewController.swift in Sources */,
 				E63F670A246314ED00E91AE0 /* CardMilkDonationViewCell.swift in Sources */,
+				0B82C60D246458C100730D03 /* VisualizarCategoriaViewController.swift in Sources */,
 				0B82C6062464400A00730D03 /* VisualizarCategoriaTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
