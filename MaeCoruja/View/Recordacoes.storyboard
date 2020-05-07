@@ -80,7 +80,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3Af-2i-53y">
                             <color key="tintColor" name="Orange"/>
                             <connections>
-                                <segue destination="gui-CZ-nXG" kind="show" id="YZB-om-uOh"/>
+                                <segue destination="gui-CZ-nXG" kind="show" identifier="addMoment" id="YZB-om-uOh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

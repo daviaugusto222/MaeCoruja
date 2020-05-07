@@ -26,7 +26,22 @@ class RecordacoesViewController: UIViewController {
         
         recordacoesCollection.register(collectionCellNib, forCellWithReuseIdentifier: PolaroidCollectionViewCell.identifier)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "addMoment" {
+            let destination = segue.destination as! AdicionarViewController
+            destination.delegate = self
+        }
+    }
 
+}
+
+extension RecordacoesViewController: SaveMomentDelegate {
+    func addMomment(moment: Polaroid) {
+        print(moment)
+    }
+    
+    
 }
 
 extension RecordacoesViewController: UICollectionViewDataSource, UICollectionViewDelegate{

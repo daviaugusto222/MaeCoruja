@@ -8,23 +8,55 @@
 
 import UIKit
 
-class AdicionarViewController: UIViewController {
+protocol SaveMomentDelegate: class {
+    func addMomment(moment: Polaroid)
+}
 
+class AdicionarViewController: UIViewController{
+
+    @IBOutlet weak var tituloTextField: UITextField!
+    @IBOutlet weak var fotoImageView: UIImageView!
+    @IBOutlet weak var textoRecordacao: UITextView!
+    
+    var imagePicker = UIImagePickerController()
+    weak var delegate: SaveMomentDelegate?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        imagePicker.delegate = self
+        
+        let saveButton = UIBarButtonItem(title: "Salvar", style: .done, target: self, action: #selector(save))
+        self.navigationItem.rightBarButtonItem = saveButton
+ 
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
-    */
+    
+    @objc func save(){
+        print("Salvou !")
+        let pol = Polaroid.createPolaroid()
+        delegate?.addMomment(moment: pol)
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func editarFotoonClick(_ sender: Any) {
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.allowsEditing = true
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+}
 
+extension AdicionarViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+            fotoImageView.image = image
+        }
+        
+        dismiss(animated: true, completion: nil)
+        
+    }
 }
