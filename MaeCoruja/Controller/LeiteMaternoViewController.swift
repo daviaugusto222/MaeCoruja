@@ -10,10 +10,10 @@ import UIKit
 
 class LeiteMaternoViewController: UIViewController {
 
-    let items: [(title: String, color: UIColor)] = [
-        (title: "Por que doar?", color: .red),
-        (title: "Como doar?", color: .green),
-        (title: "Postos de doação", color: .blue)
+    let items: [(title: String, color: String)] = [
+        (title: "Por que doar?", color: "LightPink"),
+        (title: "Como doar?", color: "Salmon"),
+        (title: "Postos de doação", color: "Purple")
     ]
     
     @IBOutlet weak var table: UITableView!
@@ -44,10 +44,11 @@ extension LeiteMaternoViewController: UITableViewDelegate, UITableViewDataSource
         
         let cell = tableView.dequeueReusableCell(withIdentifier: CardMilkDonationViewCell.identifier, for: indexPath) as! CardMilkDonationViewCell
          
-         let currentItem = items[indexPath.row]
+        let currentItem = items[indexPath.row]
          
-         cell.cardLabel.text = currentItem.title
-        // cell.bgView.tintColor = currentItem.color
+        cell.cardLabel.text = currentItem.title
+        cell.cardImage.backgroundColor = UIColor.init(named: currentItem.color)
+        
          
          return cell
     }
