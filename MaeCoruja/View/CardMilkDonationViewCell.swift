@@ -20,6 +20,7 @@ class CardMilkDonationViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         applyShadow()
+        self.selectionStyle = .none
     }
     
     func applyShadow() {

@@ -10,10 +10,10 @@ import UIKit
 
 class LeiteMaternoViewController: UIViewController {
 
-    let items: [(text: String, color: UIColor)] = [
-        (text: "Por que doar?", color: .red),
-        (text: "Como doar?", color: .green),
-        (text: "Postos de doação", color: .blue)
+    let items: [(title: String, color: UIColor)] = [
+        (title: "Por que doar?", color: .red),
+        (title: "Como doar?", color: .green),
+        (title: "Postos de doação", color: .blue)
     ]
     
     @IBOutlet weak var table: UITableView!
@@ -46,13 +46,36 @@ extension LeiteMaternoViewController: UITableViewDelegate, UITableViewDataSource
          
          let currentItem = items[indexPath.row]
          
-         cell.cardLabel.text = currentItem.text
+         cell.cardLabel.text = currentItem.title
         // cell.bgView.tintColor = currentItem.color
          
          return cell
-
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showCard3" {
+            let _ = segue.destination as! MapViewController
+        }
+       // else if segue.identifier == "mostrarCard2"
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cardSelected = items[indexPath.row].title
+        print("\(cardSelected) foi selecionada!")
+        
+        switch cardSelected {
+        case items[0].title:
+            print("Por que?")
+            //performSegue(withIdentifier: "mostrarTela2", sender: self)
+        case items[1].title:
+            print("Como?")
+            //performSegue(withIdentifier: "mostrarTela3", sender: self)
+        case items[2].title:
+            performSegue(withIdentifier: "showCard3", sender: self)
+        default:
+            return
+        }
+    }
     
     
 }

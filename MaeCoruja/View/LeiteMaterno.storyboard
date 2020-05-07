@@ -29,15 +29,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ea9-1F-aDS"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Leite Materno" largeTitleDisplayMode="always" id="6Ss-gQ-zjW">
-                        <barButtonItem key="rightBarButtonItem" title="Map" id="zNd-lo-Wjb" userLabel="Map">
-                            <connections>
-                                <segue destination="9j8-Fs-nOW" kind="show" id="DY0-xd-Qsx"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Leite Materno" largeTitleDisplayMode="always" id="6Ss-gQ-zjW"/>
                     <connections>
                         <outlet property="table" destination="SyF-VN-E83" id="NWQ-KM-VcE"/>
+                        <segue destination="9j8-Fs-nOW" kind="show" identifier="showCard3" id="4Z9-Gg-WyE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djS-0f-iVN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -52,7 +47,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nbd-qR-Mlr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1775" y="35"/>
+            <point key="canvasLocation" x="1778" y="83"/>
         </scene>
         <!--Leite Materno-->
         <scene sceneID="qxK-Iu-IhY">
