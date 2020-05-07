@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VisualizarCategoriaTableViewCell" customModule="Testes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="157"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vkm-VS-UjG">
+                    <rect key="frame" x="10" y="10" width="394" height="137"/>
+                    <color key="backgroundColor" red="0.85844865069898479" green="0.5790251375189982" blue="0.59089595525300409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p84-Tu-YQ3">
+                    <rect key="frame" x="180.5" y="65.5" width="53" height="26"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="p84-Tu-YQ3" firstAttribute="centerY" secondItem="Vkm-VS-UjG" secondAttribute="centerY" id="3zP-ej-HNo"/>
+                <constraint firstItem="p84-Tu-YQ3" firstAttribute="centerX" secondItem="Vkm-VS-UjG" secondAttribute="centerX" id="Ihr-ac-GIE"/>
+                <constraint firstItem="p84-Tu-YQ3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="65.5" id="P6d-Ft-j4Y"/>
+                <constraint firstItem="Vkm-VS-UjG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="dhY-Jy-QY0"/>
+                <constraint firstItem="Vkm-VS-UjG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="fSB-47-hL6"/>
+                <constraint firstAttribute="trailing" secondItem="Vkm-VS-UjG" secondAttribute="trailing" constant="10" id="tOf-vn-3uV"/>
+                <constraint firstAttribute="bottom" secondItem="Vkm-VS-UjG" secondAttribute="bottom" constant="10" id="vKL-af-2Ug"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageViewCell" destination="Vkm-VS-UjG" id="wiK-XC-Rph"/>
+                <outlet property="titleLabelCell" destination="p84-Tu-YQ3" id="cSE-Ya-QtB"/>
+            </connections>
+            <point key="canvasLocation" x="136.23188405797103" y="-226.67410714285714"/>
+        </view>
+    </objects>
+</document>
