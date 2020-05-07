@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,17 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Q5J-b6-SUm">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wUy-FS-ojA">
+                                <rect key="frame" x="0.0" y="111" width="414" height="751"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wUy-FS-ojA">
                                     <size key="itemSize" width="215" height="215"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="e6O-tM-vUc">
-                                        <rect key="frame" x="0.0" y="0.0" width="215" height="215"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="e6O-tM-vUc">
+                                        <rect key="frame" x="99.5" y="0.0" width="215" height="215"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VNI-PI-I6A">
                                             <rect key="frame" x="0.0" y="0.0" width="215" height="215"/>
@@ -41,12 +42,19 @@
                                     <outlet property="delegate" destination="EZy-Cw-TqJ" id="lIN-Wm-o2c"/>
                                 </connections>
                             </collectionView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="jdQ-Uu-3Q7">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="Bege"/>
                         <constraints>
-                            <constraint firstItem="Q5J-b6-SUm" firstAttribute="top" secondItem="aLJ-Bz-Vvt" secondAttribute="top" id="EXV-PG-vns"/>
+                            <constraint firstItem="Q5J-b6-SUm" firstAttribute="top" secondItem="jdQ-Uu-3Q7" secondAttribute="bottom" constant="11" id="CmS-fw-Waq"/>
                             <constraint firstItem="aLJ-Bz-Vvt" firstAttribute="trailing" secondItem="Q5J-b6-SUm" secondAttribute="trailing" id="TV0-pO-OmF"/>
                             <constraint firstItem="aLJ-Bz-Vvt" firstAttribute="bottom" secondItem="Q5J-b6-SUm" secondAttribute="bottom" id="Thl-Lg-CAE"/>
+                            <constraint firstItem="jdQ-Uu-3Q7" firstAttribute="top" secondItem="aLJ-Bz-Vvt" secondAttribute="top" id="cO3-Gl-1cF"/>
+                            <constraint firstItem="jdQ-Uu-3Q7" firstAttribute="trailing" secondItem="aLJ-Bz-Vvt" secondAttribute="trailing" id="fIJ-2j-OFc"/>
+                            <constraint firstItem="jdQ-Uu-3Q7" firstAttribute="leading" secondItem="aLJ-Bz-Vvt" secondAttribute="leading" id="kb5-YR-RiU"/>
                             <constraint firstItem="Q5J-b6-SUm" firstAttribute="leading" secondItem="aLJ-Bz-Vvt" secondAttribute="leading" id="lAI-ww-dRY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aLJ-Bz-Vvt"/>
@@ -60,4 +68,9 @@
             <point key="canvasLocation" x="60.869565217391312" y="40.848214285714285"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="Bege">
+            <color red="0.96470588235294119" green="0.95686274509803926" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

@@ -47,7 +47,7 @@
                                     <viewLayoutGuide key="safeArea" id="YXX-kp-BnR"/>
                                 </stackView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="8ht-W5-GU2" firstAttribute="top" secondItem="qH5-qZ-eo1" secondAttribute="bottom" constant="28" id="H9k-aa-7L1"/>
                                 <constraint firstItem="8ht-W5-GU2" firstAttribute="centerX" secondItem="R6D-FE-z1y" secondAttribute="centerX" id="QGo-0C-iCG"/>
@@ -58,7 +58,7 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="R6D-FE-z1y" firstAttribute="top" secondItem="PdP-HZ-iWa" secondAttribute="top" id="3YV-j1-Mud"/>
                         <constraint firstItem="R6D-FE-z1y" firstAttribute="leading" secondItem="PdP-HZ-iWa" secondAttribute="leading" id="6uh-Gc-BLP"/>
@@ -78,6 +78,7 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="dataLabel" destination="pUh-Sk-Zcu" id="ojO-kh-qwc"/>
+                <outlet property="polaroid" destination="R6D-FE-z1y" id="I80-KA-Rhr"/>
                 <outlet property="polaroidImage" destination="qH5-qZ-eo1" id="S9c-45-gM7"/>
                 <outlet property="tituloLabel" destination="2px-9m-imY" id="fiv-ch-6Py"/>
             </connections>

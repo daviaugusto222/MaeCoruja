@@ -12,9 +12,7 @@ class GaleriaViewController: UIViewController {
 
     
     @IBOutlet weak var galeriaCollectionView: UICollectionView!
-    
-    @IBOutlet weak var foto: UIImageView!
-    @IBOutlet weak var tituloLabel: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +21,9 @@ class GaleriaViewController: UIViewController {
     }
     
     private func configureCollection(){
-        let collectionCellNib = UINib(nibName: PolaroidCollectionViewCell.nibName, bundle: nil)
+        let collectionCellNib = UINib(nibName: GaleriaCollectionViewCell.nibName, bundle: nil)
 
-        galeriaCollectionView.register(collectionCellNib, forCellWithReuseIdentifier: PolaroidCollectionViewCell.identifier)
+        galeriaCollectionView.register(collectionCellNib, forCellWithReuseIdentifier: GaleriaCollectionViewCell.identifier)
     }
 
 }
@@ -36,7 +34,7 @@ extension GaleriaViewController: UICollectionViewDataSource, UICollectionViewDel
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PolaroidCollectionViewCell.identifier, for: indexPath) as! PolaroidCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GaleriaCollectionViewCell.identifier, for: indexPath) as! GaleriaCollectionViewCell
         
         cell.configure(with: Polaroid.createPolaroid())
         
@@ -48,6 +46,8 @@ extension GaleriaViewController: UICollectionViewDataSource, UICollectionViewDel
 
 extension GaleriaViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width/2, height: view.frame.height/3)
+//        return CGSize(width: view.frame.width/3, height: view.frame.height/5)
+        return CGSize(width: 150, height: 150)
     }
+    
 }

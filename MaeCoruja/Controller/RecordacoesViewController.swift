@@ -47,6 +47,6 @@ extension RecordacoesViewController: UICollectionViewDataSource, UICollectionVie
 
 extension RecordacoesViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width/1.1, height: view.frame.height/1.5)
+        return CGSize(width: view.frame.width/1.1, height: view.frame.height/1.7)
     }
 }

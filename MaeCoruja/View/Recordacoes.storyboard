@@ -45,15 +45,12 @@
                                     <outlet property="delegate" destination="iyR-PI-AFR" id="cGL-ZR-nzH"/>
                                 </connections>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBR-jM-e5f">
-                                <rect key="frame" x="19.999999999999996" y="111" width="60.666666666666657" height="22"/>
-                                <color key="tintColor" name="Orange"/>
-                                <state key="normal" title="Filtro" image="line.horizontal.3.decrease.circle" catalog="system">
-                                    <color key="titleColor" name="Orange"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Mq-jt-O62">
                                 <rect key="frame" x="309" y="111" width="85" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="Uco-bT-ECT"/>
+                                    <constraint firstAttribute="height" constant="22" id="mOb-U7-cNE"/>
+                                </constraints>
                                 <color key="tintColor" name="Orange"/>
                                 <state key="normal" title="Galeria" image="rectangle.3.offgrid.fill" catalog="system">
                                     <color key="titleColor" name="Orange"/>
@@ -65,7 +62,6 @@
                         </subviews>
                         <color key="backgroundColor" name="Bege"/>
                         <constraints>
-                            <constraint firstItem="MBR-jM-e5f" firstAttribute="leading" secondItem="CXa-BT-kgw" secondAttribute="leading" constant="20" id="5ex-T8-Pn9"/>
                             <constraint firstItem="dTX-52-MeL" firstAttribute="trailing" secondItem="CXa-BT-kgw" secondAttribute="trailing" id="845-PK-9L0"/>
                             <constraint firstItem="CXa-BT-kgw" firstAttribute="trailing" secondItem="8Mq-jt-O62" secondAttribute="trailing" constant="20" id="ASK-Tg-jMX"/>
                             <constraint firstItem="dTX-52-MeL" firstAttribute="top" secondItem="Z6K-g0-sFM" secondAttribute="top" constant="170" id="J1U-cb-Wg5"/>
@@ -76,7 +72,7 @@
                             <constraint firstItem="3GZ-6p-1iE" firstAttribute="top" secondItem="CXa-BT-kgw" secondAttribute="top" constant="36.666666666666686" id="cwa-AI-A3z"/>
                             <constraint firstItem="CXa-BT-kgw" firstAttribute="bottom" secondItem="3GZ-6p-1iE" secondAttribute="bottom" id="fzl-Tj-Oul"/>
                             <constraint firstItem="dTX-52-MeL" firstAttribute="leading" secondItem="CXa-BT-kgw" secondAttribute="leading" id="jtZ-kx-8eG"/>
-                            <constraint firstItem="MBR-jM-e5f" firstAttribute="top" secondItem="CXa-BT-kgw" secondAttribute="top" constant="6.6666666666666856" id="zXf-2k-2r1"/>
+                            <constraint firstItem="8Mq-jt-O62" firstAttribute="leading" relation="lessThanOrEqual" secondItem="CXa-BT-kgw" secondAttribute="leading" constant="309" id="uXW-7C-e17"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CXa-BT-kgw"/>
                     </view>
@@ -141,7 +137,6 @@
     <resources>
         <image name="camera.on.rectangle.fill" catalog="system" width="128" height="96"/>
         <image name="fundodeco" width="2250" height="3800"/>
-        <image name="line.horizontal.3.decrease.circle" catalog="system" width="128" height="121"/>
         <image name="rectangle.3.offgrid.fill" catalog="system" width="128" height="81"/>
         <namedColor name="Bege">
             <color red="0.96470588235294119" green="0.95686274509803926" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
