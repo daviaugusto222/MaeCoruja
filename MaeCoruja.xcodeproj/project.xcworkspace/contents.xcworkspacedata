@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-<<<<<<< HEAD
-=======
-   <Group
-      location = "group:/Users/kellyanenogueira/Desktop/Projetos/MaeCoruja/MaeCoruja/View/Tela Visualizar Categoria"
-      name = "Tela Visualizar Categoria">
-   </Group>
->>>>>>> b618cfc72cc7699579ec743956ce4709dbc30a10
    <FileRef
       location = "self:">
    </FileRef>
