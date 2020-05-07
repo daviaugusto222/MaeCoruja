@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "DhyS6fHWkAEsun_.jpg",
+      "filename" : "Map.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Map@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Map@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

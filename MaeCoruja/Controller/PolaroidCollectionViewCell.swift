@@ -13,6 +13,8 @@ class PolaroidCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var polaroidImage: UIImageView!
     @IBOutlet weak var tituloLabel: UILabel!
     @IBOutlet weak var dataLabel: UILabel!
+    @IBOutlet weak var polaroid: UIView!
+    
     
     static let nibName = "PolaroidCollectionCell"
     static let identifier = "polaroidCell"
@@ -29,8 +31,21 @@ class PolaroidCollectionViewCell: UICollectionViewCell {
         dataLabel.text = polaroid.data
     }
     
+    func applyShadow() {
+        //Deixando o shadow passar das fronteiras da mascara da layer da contentView da celula
+        self.contentView.layer.masksToBounds = false
+        
+        polaroid.layer.cornerRadius = 4
+        polaroid.layer.shadowColor = UIColor.black.cgColor
+        polaroid.layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
+        polaroid.layer.shadowRadius = 8.0
+        polaroid.layer.shadowOpacity = 0.2
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        applyShadow()
     }
     
 }

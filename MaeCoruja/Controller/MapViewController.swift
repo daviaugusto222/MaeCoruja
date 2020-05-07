@@ -37,7 +37,7 @@ class MapViewController: UIViewController {
         mapView.setCameraBoundary(MKMapView.CameraBoundary(coordinateRegion: region), animated: true)
         
         //Setting a zoom
-        let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 1200000)
+        let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 159200000)//1200000
         
         //Applying zoom setting to the camera
         mapView.setCameraZoomRange(zoomRange, animated: true)
@@ -92,7 +92,7 @@ class MapViewController: UIViewController {
 private extension MKMapView {
   func centerToLocation(
     _ location: CLLocation,
-    regionRadius: CLLocationDistance = 1000000
+    regionRadius: CLLocationDistance = 25000
   ) {
     let coordinateRegion = MKCoordinateRegion(
       center: location.coordinate,

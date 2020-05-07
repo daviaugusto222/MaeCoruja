@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,6 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Ice"/>
+                        <color key="selectedImageTintColor" name="Orange"/>
                     </tabBar>
                     <connections>
                         <segue destination="fBr-O3-7DQ" kind="relationship" relationship="viewControllers" id="LUV-lC-LsH"/>
@@ -56,4 +59,12 @@
             <point key="canvasLocation" x="-646" y="94"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="Ice">
+            <color red="0.9882352941176471" green="0.97254901960784312" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Orange">
+            <color red="0.92941176470588238" green="0.5490196078431373" blue="0.14509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
