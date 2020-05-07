@@ -6,7 +6,7 @@
 //  Copyright © 2020 David Augusto. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 struct Polaroid {
     var titulo: String
@@ -19,4 +19,10 @@ struct Polaroid {
     static func createPolaroid() -> Polaroid {
         return Polaroid(titulo: "O primeiro chute", fotoNome: "chute", data: "10.05.2020", texto: "Um dia lindo pipipipopopo")
     }
+    
+    static func createPolaroidCollection() -> [Polaroid] {
+        var polaroids = [Polaroid]()
+        for _ in 0...5 { polaroids.append(Polaroid())}
+    }
+    
 }
