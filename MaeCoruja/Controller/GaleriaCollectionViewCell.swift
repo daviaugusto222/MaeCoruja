@@ -11,16 +11,20 @@ import UIKit
 class GaleriaCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var foto: UIImageView!
+    @IBOutlet weak var tituloLabel: UILabel!
     
     static let nibName = "GaleriaCollectionCell"
     static let identifier = "galeriaCell"
     
     override func prepareForReuse() {
         foto.image = nil
+        tituloLabel.text = ""
     }
     
     func configure(with polaroid: Polaroid) {
         foto.image = polaroid.foto
+        tituloLabel.text = polaroid.titulo
+        
     }
     
     func applyShadow() {

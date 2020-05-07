@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PVJ-3n-UHc">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="170" width="414" height="517"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3GZ-6p-1iE">
-                                <rect key="frame" x="0.0" y="141" width="414" height="546"/>
+                                <rect key="frame" x="0.0" y="148" width="414" height="539"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="s1g-ib-9ld">
                                     <size key="itemSize" width="154" height="145"/>
@@ -45,14 +45,17 @@
                                     <outlet property="delegate" destination="iyR-PI-AFR" id="cGL-ZR-nzH"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recentes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTG-4W-zoZ">
+                                <rect key="frame" x="20.000000000000007" y="119.33333333333331" width="88.666666666666686" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Mq-jt-O62">
-                                <rect key="frame" x="309" y="111" width="85" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="85" id="Uco-bT-ECT"/>
-                                    <constraint firstAttribute="height" constant="22" id="mOb-U7-cNE"/>
-                                </constraints>
+                                <rect key="frame" x="283.66666666666669" y="119.33333333333331" width="110.33333333333331" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="tintColor" name="Orange"/>
-                                <state key="normal" title="Galeria" image="rectangle.3.offgrid.fill" catalog="system">
+                                <state key="normal" title="Ver todos" image="rectangle.3.offgrid.fill" catalog="system">
                                     <color key="titleColor" name="Orange"/>
                                 </state>
                                 <connections>
@@ -62,17 +65,18 @@
                         </subviews>
                         <color key="backgroundColor" name="Bege"/>
                         <constraints>
+                            <constraint firstItem="KTG-4W-zoZ" firstAttribute="top" secondItem="CXa-BT-kgw" secondAttribute="top" constant="15" id="0ud-Zd-CjD"/>
+                            <constraint firstItem="KTG-4W-zoZ" firstAttribute="leading" secondItem="CXa-BT-kgw" secondAttribute="leading" constant="20" id="5rt-zR-gja"/>
                             <constraint firstItem="dTX-52-MeL" firstAttribute="trailing" secondItem="CXa-BT-kgw" secondAttribute="trailing" id="845-PK-9L0"/>
-                            <constraint firstItem="CXa-BT-kgw" firstAttribute="trailing" secondItem="8Mq-jt-O62" secondAttribute="trailing" constant="20" id="ASK-Tg-jMX"/>
+                            <constraint firstItem="8Mq-jt-O62" firstAttribute="top" secondItem="CXa-BT-kgw" secondAttribute="top" constant="15" id="IV0-Tf-Fdr"/>
                             <constraint firstItem="dTX-52-MeL" firstAttribute="top" secondItem="Z6K-g0-sFM" secondAttribute="top" constant="170" id="J1U-cb-Wg5"/>
                             <constraint firstItem="3GZ-6p-1iE" firstAttribute="leading" secondItem="CXa-BT-kgw" secondAttribute="leading" id="L65-g6-rQQ"/>
                             <constraint firstItem="CXa-BT-kgw" firstAttribute="trailing" secondItem="3GZ-6p-1iE" secondAttribute="trailing" id="MyM-zq-rRu"/>
                             <constraint firstItem="dTX-52-MeL" firstAttribute="bottom" secondItem="CXa-BT-kgw" secondAttribute="bottom" id="SZ2-qC-cNy"/>
-                            <constraint firstItem="8Mq-jt-O62" firstAttribute="top" secondItem="CXa-BT-kgw" secondAttribute="top" constant="6.6666666666666856" id="WZL-W4-XwJ"/>
-                            <constraint firstItem="3GZ-6p-1iE" firstAttribute="top" secondItem="CXa-BT-kgw" secondAttribute="top" constant="36.666666666666686" id="cwa-AI-A3z"/>
+                            <constraint firstItem="3GZ-6p-1iE" firstAttribute="top" secondItem="CXa-BT-kgw" secondAttribute="top" constant="43.666666666666686" id="ZcN-nJ-bMW"/>
                             <constraint firstItem="CXa-BT-kgw" firstAttribute="bottom" secondItem="3GZ-6p-1iE" secondAttribute="bottom" id="fzl-Tj-Oul"/>
                             <constraint firstItem="dTX-52-MeL" firstAttribute="leading" secondItem="CXa-BT-kgw" secondAttribute="leading" id="jtZ-kx-8eG"/>
-                            <constraint firstItem="8Mq-jt-O62" firstAttribute="leading" relation="lessThanOrEqual" secondItem="CXa-BT-kgw" secondAttribute="leading" constant="309" id="uXW-7C-e17"/>
+                            <constraint firstItem="CXa-BT-kgw" firstAttribute="trailing" secondItem="8Mq-jt-O62" secondAttribute="trailing" constant="20" id="qaV-WI-oC1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CXa-BT-kgw"/>
                     </view>
@@ -120,7 +124,7 @@
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="lv4-Fw-5u9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="104.33333333333334"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" name="Orange"/>
                     </navigationBar>

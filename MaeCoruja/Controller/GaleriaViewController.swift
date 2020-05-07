@@ -46,8 +46,8 @@ extension GaleriaViewController: UICollectionViewDataSource, UICollectionViewDel
 
 extension GaleriaViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: view.frame.width/3, height: view.frame.height/5)
-        return CGSize(width: 150, height: 150)
+        return CGSize(width: view.frame.width/2.07, height: view.frame.height/5.6)
+        //return CGSize(width: 150, height: 150)
     }
     
 }
