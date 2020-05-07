@@ -25,6 +25,7 @@ class LeiteMaternoViewController: UIViewController {
         table.delegate = self
         table.dataSource = self
         
+        table.backgroundColor = .none
         table.separatorStyle = .none
 
         let tableCellNib = UINib(nibName: CardMilkDonationViewCell.nibName, bundle: nil)
@@ -57,12 +58,13 @@ extension LeiteMaternoViewController: UITableViewDelegate, UITableViewDataSource
         if segue.identifier == "showCard3" {
             let _ = segue.destination as! MapViewController
         }
-       // else if segue.identifier == "mostrarCard2"
+        else if segue.identifier == "mostrarCard2" {
+            let _ = segue.destination as! ComoDoarViewController
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cardSelected = items[indexPath.row].title
-        print("\(cardSelected) foi selecionada!")
         
         switch cardSelected {
         case items[0].title:
@@ -70,7 +72,7 @@ extension LeiteMaternoViewController: UITableViewDelegate, UITableViewDataSource
             //performSegue(withIdentifier: "mostrarTela2", sender: self)
         case items[1].title:
             print("Como?")
-            //performSegue(withIdentifier: "mostrarTela3", sender: self)
+            performSegue(withIdentifier: "showCard2", sender: self)
         case items[2].title:
             performSegue(withIdentifier: "showCard3", sender: self)
         default:

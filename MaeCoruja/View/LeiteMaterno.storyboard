@@ -18,8 +18,9 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="155" estimatedRowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SyF-VN-E83">
                                 <rect key="frame" x="0.0" y="106" width="375" height="512"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="sectionIndexBackgroundColor" name="Bege"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" name="Bege"/>
@@ -35,6 +36,7 @@
                     <connections>
                         <outlet property="table" destination="SyF-VN-E83" id="NWQ-KM-VcE"/>
                         <segue destination="9j8-Fs-nOW" kind="show" identifier="showCard3" id="4Z9-Gg-WyE"/>
+                        <segue destination="tJh-Ep-g3x" kind="show" identifier="showCard2" id="ybD-QV-urZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djS-0f-iVN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -49,7 +51,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nbd-qR-Mlr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1778" y="83"/>
+            <point key="canvasLocation" x="746" y="538"/>
+        </scene>
+        <!--ComoDoar-->
+        <scene sceneID="ANx-pQ-Arl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ComoDoar" id="tJh-Ep-g3x" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3cQ-Fs-5ok"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hbd-F9-CQZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1354" y="538"/>
         </scene>
         <!--Leite Materno-->
         <scene sceneID="qxK-Iu-IhY">
