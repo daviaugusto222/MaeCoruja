@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		382384AA24622D3200FC766D /* MilkBanksAndCollectionPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382384A924622D3200FC766D /* MilkBanksAndCollectionPoints.swift */; };
 		383498B02463018600E9255B /* MilkBanksAndCollectionPoints.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 383498AF2463018600E9255B /* MilkBanksAndCollectionPoints.geojson */; };
+		383498B224645BCE00E9255B /* MilkBanksAndCollectionPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383498B124645BCE00E9255B /* MilkBanksAndCollectionPointsView.swift */; };
 		38F5C4722460E0B000BF1EB2 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F5C4712460E0B000BF1EB2 /* Map.storyboard */; };
 		38F5C4742460E18E00BF1EB2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5C4732460E18E00BF1EB2 /* MapViewController.swift */; };
 		4B4E704E2462C5CE00A539A9 /* GaleriaRecordacoes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B4E704D2462C5CE00A539A9 /* GaleriaRecordacoes.storyboard */; };
@@ -56,6 +57,7 @@
 /* Begin PBXFileReference section */
 		382384A924622D3200FC766D /* MilkBanksAndCollectionPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkBanksAndCollectionPoints.swift; sourceTree = "<group>"; };
 		383498AF2463018600E9255B /* MilkBanksAndCollectionPoints.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MilkBanksAndCollectionPoints.geojson; sourceTree = "<group>"; };
+		383498B124645BCE00E9255B /* MilkBanksAndCollectionPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkBanksAndCollectionPointsView.swift; sourceTree = "<group>"; };
 		38F5C4712460E0B000BF1EB2 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		38F5C4732460E18E00BF1EB2 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4B4E704D2462C5CE00A539A9 /* GaleriaRecordacoes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GaleriaRecordacoes.storyboard; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				4B4E7059246363A700A539A9 /* GaleriaCollectionCell.xib */,
 				E63F67072463148B00E91AE0 /* CardMilkDonationTableViewCell.xib */,
 				E63F6709246314ED00E91AE0 /* CardMilkDonationViewCell.swift */,
+				383498B124645BCE00E9255B /* MilkBanksAndCollectionPointsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,7 +318,6 @@
 			files = (
 				4BF3AE68245857A200659F75 /* Guias.storyboard in Resources */,
 				4B4E704E2462C5CE00A539A9 /* GaleriaRecordacoes.storyboard in Resources */,
-				382384A82461C6D600FC766D /* MilkBanksAndCollectionPoints.geojson in Resources */,
 				4B4E705A246363A700A539A9 /* GaleriaCollectionCell.xib in Resources */,
 				4BB79932245726D20015CFF6 /* LaunchScreen.storyboard in Resources */,
 				4BF3AE632458550E00659F75 /* TabBar.storyboard in Resources */,
@@ -359,6 +361,7 @@
 				4B4E705C2463647700A539A9 /* GaleriaCollectionViewCell.swift in Sources */,
 				4BB79926245726CF0015CFF6 /* AppDelegate.swift in Sources */,
 				4B4E70582462CF7300A539A9 /* AdicionarViewController.swift in Sources */,
+				383498B224645BCE00E9255B /* MilkBanksAndCollectionPointsView.swift in Sources */,
 				4BF3AE6F245874A700659F75 /* RecordacoesViewController.swift in Sources */,
 				4BB79928245726CF0015CFF6 /* SceneDelegate.swift in Sources */,
 				4BF3AE75245B0A1000659F75 /* Polaroid.swift in Sources */,

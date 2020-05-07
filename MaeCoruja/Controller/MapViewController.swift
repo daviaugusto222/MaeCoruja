@@ -42,6 +42,12 @@ class MapViewController: UIViewController {
         //Applying zoom setting to the camera
         mapView.setCameraZoomRange(zoomRange, animated: true)
         
+        //Registing an image as view
+        mapView.register(
+        ArtworkView.self,
+        forAnnotationViewWithReuseIdentifier:
+          MKMapViewDefaultAnnotationViewReuseIdentifier)
+        
         //Loading the data
         loadInitialData()
         
@@ -106,40 +112,40 @@ private extension MKMapView {
 extension MapViewController: MKMapViewDelegate{
     
     //Creating a different view for each Annotation
-    func mapView(
-        _ mapView: MKMapView,
-        viewFor annotation: MKAnnotation
-        ) -> MKAnnotationView? {
-        
-        //Setting this view only for annotations of type MilkBanksAndCollectionPoints
-        guard let annotation = annotation as? MilkBanksAndCollectionPoins else {
-            return nil
-        }
-        
-        //Setting an identifier
-        let identifier = "milkbanksandcollectionpoints"
-        var view: MKMarkerAnnotationView
-        
-        //Making the view reusable
-        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView {
-            
-            dequeuedView.annotation = annotation
-            view = dequeuedView
-        } else {
-            //If is not possible reuse an view, create a new one
-            view = MKMarkerAnnotationView(
-              annotation: annotation,
-              reuseIdentifier: identifier)
-            view.canShowCallout = true
-            view.calloutOffset = CGPoint(x: -5, y: 5)
-            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-        
-        }
-        
-        //return the view
-        return view
-        
-    }
+//    func mapView(
+//        _ mapView: MKMapView,
+//        viewFor annotation: MKAnnotation
+//        ) -> MKAnnotationView? {
+//
+//        //Setting this view only for annotations of type MilkBanksAndCollectionPoints
+//        guard let annotation = annotation as? MilkBanksAndCollectionPoins else {
+//            return nil
+//        }
+//
+//        //Setting an identifier
+//        let identifier = "milkbanksandcollectionpoints"
+//        var view: MKMarkerAnnotationView
+//
+//        //Making the view reusable
+//        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView {
+//
+//            dequeuedView.annotation = annotation
+//            view = dequeuedView
+//        } else {
+//            //If is not possible reuse an view, create a new one
+//            view = MKMarkerAnnotationView(
+//              annotation: annotation,
+//              reuseIdentifier: identifier)
+//            view.canShowCallout = true
+//            view.calloutOffset = CGPoint(x: -5, y: 5)
+//            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+//
+//        }
+//
+//        //return the view
+//        return view
+//        
+//    }
     
     //Aux function to handle the map app button on annotations
     func mapView(
