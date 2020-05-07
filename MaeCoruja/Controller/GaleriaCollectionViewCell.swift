@@ -20,7 +20,7 @@ class GaleriaCollectionViewCell: UICollectionViewCell {
     }
     
     func configure(with polaroid: Polaroid) {
-        foto.image = UIImage(named: polaroid.fotoNome)
+        foto.image = polaroid.foto
     }
     
     func applyShadow() {
