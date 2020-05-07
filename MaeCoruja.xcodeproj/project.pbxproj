@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B82C5ED24643F6B00730D03 /* ComoDoarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82C5EA24643F6B00730D03 /* ComoDoarViewController.swift */; };
+		0B82C5EE24643F6B00730D03 /* ConteudoGuiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82C5EB24643F6B00730D03 /* ConteudoGuiaViewController.swift */; };
+		0B82C5EF24643F6B00730D03 /* VisualizarCategoriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82C5EC24643F6B00730D03 /* VisualizarCategoriaViewController.swift */; };
+		0B82C5F624643F9000730D03 /* ContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B82C5F124643F9000730D03 /* ContentTableViewCell.xib */; };
+		0B82C5F724643F9000730D03 /* leiteMaterno.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B82C5F324643F9000730D03 /* leiteMaterno.png */; };
+		0B82C5F824643F9000730D03 /* ContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82C5F424643F9000730D03 /* ContentTableViewCell.swift */; };
+		0B82C5F924643F9000730D03 /* ComoDoar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B82C5F524643F9000730D03 /* ComoDoar.storyboard */; };
 		382384AA24622D3200FC766D /* MilkBanksAndCollectionPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382384A924622D3200FC766D /* MilkBanksAndCollectionPoints.swift */; };
 		383498B02463018600E9255B /* MilkBanksAndCollectionPoints.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 383498AF2463018600E9255B /* MilkBanksAndCollectionPoints.geojson */; };
 		38F5C4722460E0B000BF1EB2 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F5C4712460E0B000BF1EB2 /* Map.storyboard */; };
@@ -54,6 +61,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B82C5EA24643F6B00730D03 /* ComoDoarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ComoDoarViewController.swift; path = ../../../Testes/Testes/Controller/ComoDoarViewController.swift; sourceTree = "<group>"; };
+		0B82C5EB24643F6B00730D03 /* ConteudoGuiaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConteudoGuiaViewController.swift; path = ../../../Testes/Testes/Controller/ConteudoGuiaViewController.swift; sourceTree = "<group>"; };
+		0B82C5EC24643F6B00730D03 /* VisualizarCategoriaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VisualizarCategoriaViewController.swift; path = ../../../Testes/Testes/Controller/VisualizarCategoriaViewController.swift; sourceTree = "<group>"; };
+		0B82C5F124643F9000730D03 /* ContentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentTableViewCell.xib; sourceTree = "<group>"; };
+		0B82C5F324643F9000730D03 /* leiteMaterno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leiteMaterno.png; sourceTree = "<group>"; };
+		0B82C5F424643F9000730D03 /* ContentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentTableViewCell.swift; sourceTree = "<group>"; };
+		0B82C5F524643F9000730D03 /* ComoDoar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ComoDoar.storyboard; sourceTree = "<group>"; };
 		382384A924622D3200FC766D /* MilkBanksAndCollectionPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkBanksAndCollectionPoints.swift; sourceTree = "<group>"; };
 		383498AF2463018600E9255B /* MilkBanksAndCollectionPoints.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MilkBanksAndCollectionPoints.geojson; sourceTree = "<group>"; };
 		38F5C4712460E0B000BF1EB2 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
@@ -114,6 +128,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B82C5F024643F9000730D03 /* Tela Como Doar */ = {
+			isa = PBXGroup;
+			children = (
+				0B82C5F124643F9000730D03 /* ContentTableViewCell.xib */,
+				0B82C5F224643F9000730D03 /* images */,
+				0B82C5F424643F9000730D03 /* ContentTableViewCell.swift */,
+				0B82C5F524643F9000730D03 /* ComoDoar.storyboard */,
+			);
+			name = "Tela Como Doar";
+			path = "../../../Testes/Testes/View/Tela Como Doar";
+			sourceTree = "<group>";
+		};
+		0B82C5F224643F9000730D03 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				0B82C5F324643F9000730D03 /* leiteMaterno.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		4BB79919245726CF0015CFF6 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +202,7 @@
 		4BF3AE642458551900659F75 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0B82C5F024643F9000730D03 /* Tela Como Doar */,
 				4BB7992E245726D20015CFF6 /* Assets.xcassets */,
 				4BB79930245726D20015CFF6 /* LaunchScreen.storyboard */,
 				4BF3AE622458550E00659F75 /* TabBar.storyboard */,
@@ -188,6 +223,9 @@
 		4BF3AE6C2458743B00659F75 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0B82C5EA24643F6B00730D03 /* ComoDoarViewController.swift */,
+				0B82C5EB24643F6B00730D03 /* ConteudoGuiaViewController.swift */,
+				0B82C5EC24643F6B00730D03 /* VisualizarCategoriaViewController.swift */,
 				4BF3AE72245AFAB200659F75 /* PolaroidCollectionViewCell.swift */,
 				4BF3AE6E245874A700659F75 /* RecordacoesViewController.swift */,
 				38F5C4732460E18E00BF1EB2 /* MapViewController.swift */,
@@ -314,8 +352,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BF3AE68245857A200659F75 /* Guias.storyboard in Resources */,
+				0B82C5F724643F9000730D03 /* leiteMaterno.png in Resources */,
+				0B82C5F624643F9000730D03 /* ContentTableViewCell.xib in Resources */,
 				4B4E704E2462C5CE00A539A9 /* GaleriaRecordacoes.storyboard in Resources */,
-				382384A82461C6D600FC766D /* MilkBanksAndCollectionPoints.geojson in Resources */,
 				4B4E705A246363A700A539A9 /* GaleriaCollectionCell.xib in Resources */,
 				4BB79932245726D20015CFF6 /* LaunchScreen.storyboard in Resources */,
 				4BF3AE632458550E00659F75 /* TabBar.storyboard in Resources */,
@@ -326,6 +365,7 @@
 				E63F67082463148B00E91AE0 /* CardMilkDonationTableViewCell.xib in Resources */,
 				4BF3AE71245AF49000659F75 /* PolaroidCollectionCell.xib in Resources */,
 				4BF3AE662458579800659F75 /* Recordacoes.storyboard in Resources */,
+				0B82C5F924643F9000730D03 /* ComoDoar.storyboard in Resources */,
 				4BF3AE6A245857B400659F75 /* LeiteMaterno.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,14 +394,18 @@
 				E63F670E2463221D00E91AE0 /* LeiteMaternoViewController.swift in Sources */,
 				4BF3AE73245AFAB200659F75 /* PolaroidCollectionViewCell.swift in Sources */,
 				38F5C4742460E18E00BF1EB2 /* MapViewController.swift in Sources */,
+				0B82C5F824643F9000730D03 /* ContentTableViewCell.swift in Sources */,
 				4B4E70542462C89B00A539A9 /* GaleriaViewController.swift in Sources */,
+				0B82C5ED24643F6B00730D03 /* ComoDoarViewController.swift in Sources */,
 				382384AA24622D3200FC766D /* MilkBanksAndCollectionPoints.swift in Sources */,
 				4B4E705C2463647700A539A9 /* GaleriaCollectionViewCell.swift in Sources */,
 				4BB79926245726CF0015CFF6 /* AppDelegate.swift in Sources */,
+				0B82C5EE24643F6B00730D03 /* ConteudoGuiaViewController.swift in Sources */,
 				4B4E70582462CF7300A539A9 /* AdicionarViewController.swift in Sources */,
 				4BF3AE6F245874A700659F75 /* RecordacoesViewController.swift in Sources */,
 				4BB79928245726CF0015CFF6 /* SceneDelegate.swift in Sources */,
 				4BF3AE75245B0A1000659F75 /* Polaroid.swift in Sources */,
+				0B82C5EF24643F6B00730D03 /* VisualizarCategoriaViewController.swift in Sources */,
 				E63F670A246314ED00E91AE0 /* CardMilkDonationViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
