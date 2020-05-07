@@ -16,6 +16,9 @@
 		0B82C6192464622000730D03 /* ConteudoGuiaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82C6162464622000730D03 /* ConteudoGuiaTableViewCell.swift */; };
 		0B82C61A2464622000730D03 /* ConteudoGuiaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B82C6172464622000730D03 /* ConteudoGuiaTableViewCell.xib */; };
 		0B82C61B2464622000730D03 /* ConteudoGuia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B82C6182464622000730D03 /* ConteudoGuia.storyboard */; };
+		0B82C629246475AF00730D03 /* VisualizarCategoria.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B82C626246475AF00730D03 /* VisualizarCategoria.storyboard */; };
+		0B82C62A246475AF00730D03 /* VisualizarCategoriaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82C627246475AF00730D03 /* VisualizarCategoriaTableViewCell.swift */; };
+		0B82C62B246475AF00730D03 /* VisualizarCategoriaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B82C628246475AF00730D03 /* VisualizarCategoriaTableViewCell.xib */; };
 		382384AA24622D3200FC766D /* MilkBanksAndCollectionPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382384A924622D3200FC766D /* MilkBanksAndCollectionPoints.swift */; };
 		383498B02463018600E9255B /* MilkBanksAndCollectionPoints.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 383498AF2463018600E9255B /* MilkBanksAndCollectionPoints.geojson */; };
 		38F5C4722460E0B000BF1EB2 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F5C4712460E0B000BF1EB2 /* Map.storyboard */; };
@@ -72,9 +75,9 @@
 		0B82C6162464622000730D03 /* ConteudoGuiaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConteudoGuiaTableViewCell.swift; sourceTree = "<group>"; };
 		0B82C6172464622000730D03 /* ConteudoGuiaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConteudoGuiaTableViewCell.xib; sourceTree = "<group>"; };
 		0B82C6182464622000730D03 /* ConteudoGuia.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ConteudoGuia.storyboard; sourceTree = "<group>"; };
-		0B82C61C2464625200730D03 /* VisualizarCategoria.storyboard */ = {isa = PBXFileReference; path = VisualizarCategoria.storyboard; sourceTree = "<group>"; };
-		0B82C61D2464625200730D03 /* VisualizarCategoriaTableViewCell.swift */ = {isa = PBXFileReference; path = VisualizarCategoriaTableViewCell.swift; sourceTree = "<group>"; };
-		0B82C61E2464625200730D03 /* VisualizarCategoriaTableViewCell.xib */ = {isa = PBXFileReference; path = VisualizarCategoriaTableViewCell.xib; sourceTree = "<group>"; };
+		0B82C626246475AF00730D03 /* VisualizarCategoria.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VisualizarCategoria.storyboard; sourceTree = "<group>"; };
+		0B82C627246475AF00730D03 /* VisualizarCategoriaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualizarCategoriaTableViewCell.swift; sourceTree = "<group>"; };
+		0B82C628246475AF00730D03 /* VisualizarCategoriaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisualizarCategoriaTableViewCell.xib; sourceTree = "<group>"; };
 		382384A924622D3200FC766D /* MilkBanksAndCollectionPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkBanksAndCollectionPoints.swift; sourceTree = "<group>"; };
 		383498AF2463018600E9255B /* MilkBanksAndCollectionPoints.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MilkBanksAndCollectionPoints.geojson; sourceTree = "<group>"; };
 		38F5C4712460E0B000BF1EB2 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
@@ -155,16 +158,15 @@
 			path = "Tela Conteudo de Guia";
 			sourceTree = "<group>";
 		};
-		0B82C61F2464625200730D03 /* Tela Visualizar Categoria */ = {
+		0B82C625246475AF00730D03 /* Tela Visualizar Categoria */ = {
 			isa = PBXGroup;
 			children = (
-				0B82C61C2464625200730D03 /* VisualizarCategoria.storyboard */,
-				0B82C61D2464625200730D03 /* VisualizarCategoriaTableViewCell.swift */,
-				0B82C61E2464625200730D03 /* VisualizarCategoriaTableViewCell.xib */,
+				0B82C626246475AF00730D03 /* VisualizarCategoria.storyboard */,
+				0B82C627246475AF00730D03 /* VisualizarCategoriaTableViewCell.swift */,
+				0B82C628246475AF00730D03 /* VisualizarCategoriaTableViewCell.xib */,
 			);
-			name = "Tela Visualizar Categoria";
-			path = "/Users/kellyanenogueira/Desktop/Projetos/MaeCoruja/MaeCoruja/View/Tela Visualizar Categoria";
-			sourceTree = "<absolute>";
+			path = "Tela Visualizar Categoria";
+			sourceTree = "<group>";
 		};
 		4BB79919245726CF0015CFF6 = {
 			isa = PBXGroup;
@@ -220,7 +222,7 @@
 		4BF3AE642458551900659F75 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0B82C61F2464625200730D03 /* Tela Visualizar Categoria */,
+				0B82C625246475AF00730D03 /* Tela Visualizar Categoria */,
 				0B82C6152464622000730D03 /* Tela Conteudo de Guia */,
 				0B82C60E246461EF00730D03 /* Tela Como Doar */,
 				4BB7992E245726D20015CFF6 /* Assets.xcassets */,
@@ -378,6 +380,7 @@
 				4BB79932245726D20015CFF6 /* LaunchScreen.storyboard in Resources */,
 				0B82C61B2464622000730D03 /* ConteudoGuia.storyboard in Resources */,
 				4BF3AE632458550E00659F75 /* TabBar.storyboard in Resources */,
+				0B82C62B246475AF00730D03 /* VisualizarCategoriaTableViewCell.xib in Resources */,
 				383498B02463018600E9255B /* MilkBanksAndCollectionPoints.geojson in Resources */,
 				38F5C4722460E0B000BF1EB2 /* Map.storyboard in Resources */,
 				4B4E70562462CF4900A539A9 /* AdicionarRecordacoes.storyboard in Resources */,
@@ -385,6 +388,7 @@
 				E63F67082463148B00E91AE0 /* CardMilkDonationTableViewCell.xib in Resources */,
 				4BF3AE71245AF49000659F75 /* PolaroidCollectionCell.xib in Resources */,
 				4BF3AE662458579800659F75 /* Recordacoes.storyboard in Resources */,
+				0B82C629246475AF00730D03 /* VisualizarCategoria.storyboard in Resources */,
 				0B82C61A2464622000730D03 /* ConteudoGuiaTableViewCell.xib in Resources */,
 				0B82C612246461EF00730D03 /* ContentTableViewCell.xib in Resources */,
 				4BF3AE6A245857B400659F75 /* LeiteMaterno.storyboard in Resources */,
@@ -429,6 +433,7 @@
 				4BF3AE75245B0A1000659F75 /* Polaroid.swift in Sources */,
 				E63F670A246314ED00E91AE0 /* CardMilkDonationViewCell.swift in Sources */,
 				0B82C60D246458C100730D03 /* VisualizarCategoriaViewController.swift in Sources */,
+				0B82C62A246475AF00730D03 /* VisualizarCategoriaTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
