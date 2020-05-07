@@ -37,7 +37,7 @@ class MapViewController: UIViewController {
         mapView.setCameraBoundary(MKMapView.CameraBoundary(coordinateRegion: region), animated: true)
         
         //Setting a zoom
-        let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 1200000)
+        let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 159200000)//1200000
         
         //Applying zoom setting to the camera
         mapView.setCameraZoomRange(zoomRange, animated: true)
@@ -48,6 +48,14 @@ class MapViewController: UIViewController {
         //Adding annotations to the map
         mapView.addAnnotations(milkbanksandcollectionpoints)
         
+//        let milkbanksandcollectionpoints = MilkBanksAndCollectionPoins(
+//            title: "Banco de Leite Humano do Hospital Geral de Fortaleza",
+//            locationName: "Hospital Geral de Fortaleza",
+//            discipline: "Banco de Leite",
+//            coordinate: CLLocationCoordinate2D(latitude: -3.739328, longitude: -38.476035)
+//        )
+//        mapView.addAnnotation(milkbanksandcollectionpoints)
+        
     }
     
     //Func to load data to the map
@@ -57,6 +65,7 @@ class MapViewController: UIViewController {
         let fileName = Bundle.main.url(forResource: "MilkBanksAndCollectionPoints", withExtension: "geojson"),
         let milkAndCollectionData = try? Data(contentsOf: fileName)
         else {
+            print("Não foi possível carregar o geojson")
           return
       }
 
@@ -83,7 +92,7 @@ class MapViewController: UIViewController {
 private extension MKMapView {
   func centerToLocation(
     _ location: CLLocation,
-    regionRadius: CLLocationDistance = 1000000
+    regionRadius: CLLocationDistance = 25000
   ) {
     let coordinateRegion = MKCoordinateRegion(
       center: location.coordinate,
@@ -98,7 +107,7 @@ extension MapViewController: MKMapViewDelegate{
     
     //Creating a different view for each Annotation
     func mapView(
-        _mapView: MKMapView,
+        _ mapView: MKMapView,
         viewFor annotation: MKAnnotation
         ) -> MKAnnotationView? {
         

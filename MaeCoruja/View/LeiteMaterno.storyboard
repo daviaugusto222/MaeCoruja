@@ -1,29 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vls-Hw-v1c">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Leite Materno-->
         <scene sceneID="CMv-jr-5Is">
             <objects>
-                <viewController id="i8J-rR-fY5" sceneMemberID="viewController">
+                <viewController id="i8J-rR-fY5" customClass="LeiteMaternoViewController" customModule="MaeCoruja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vps-yB-JUY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="155" estimatedRowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SyF-VN-E83">
+                                <rect key="frame" x="0.0" y="106" width="375" height="512"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SyF-VN-E83" firstAttribute="top" secondItem="ea9-1F-aDS" secondAttribute="top" constant="10" id="VvO-aA-qsq"/>
+                            <constraint firstItem="ea9-1F-aDS" firstAttribute="bottom" secondItem="SyF-VN-E83" secondAttribute="bottom" id="sEZ-FS-2sK"/>
+                            <constraint firstItem="ea9-1F-aDS" firstAttribute="trailing" secondItem="SyF-VN-E83" secondAttribute="trailing" id="tXI-Sz-gMa"/>
+                            <constraint firstItem="SyF-VN-E83" firstAttribute="leading" secondItem="ea9-1F-aDS" secondAttribute="leading" id="xiv-EU-5aF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ea9-1F-aDS"/>
                     </view>
-                    <navigationItem key="navigationItem" id="6Ss-gQ-zjW">
+                    <navigationItem key="navigationItem" title="Leite Materno" largeTitleDisplayMode="always" id="6Ss-gQ-zjW">
                         <barButtonItem key="rightBarButtonItem" title="Map" id="zNd-lo-Wjb" userLabel="Map">
                             <connections>
                                 <segue destination="9j8-Fs-nOW" kind="show" id="DY0-xd-Qsx"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="table" destination="SyF-VN-E83" id="NWQ-KM-VcE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djS-0f-iVN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,8 +61,8 @@
                     <tabBarItem key="tabBarItem" title="Leite Materno" image="suit.heart.fill" catalog="system" id="Oyj-a0-wjG"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fld-K6-Of2">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="fld-K6-Of2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -1,481 +1,583 @@
 {
-    “type”: “FeatureCollection”,
-    “features”: [
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital e Maternidade Jesus Maria José”,
-                “latitude”: “-4.966990”,
-                “longitude”: “, -39.024525”,
-                “discipline”: “Banco de Leite Humano”,
-                “title”: “Banco de Leite Humano do Hospital e Maternidade Jesus Maria José”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-4.966990, -39.024525]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital Geral de Fortaleza”,
-                “latitude”: “-3.739328”,
-                “longitude”: “-38.476035”,
-                “discipline”: “Banco de Leite Humano”,
-                “title”: “Banco de Leite Humano do Hospital Geral de Fortaleza”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.739328, -38.476035]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital Geral Dr. César Cals”,
-                “latitude”: “-3.726270”,
-                “longitude”: “-38.533895”,
-                “discipline”: “Banco de Leite Humano”,
-                “title”: “Banco de Leite Humano do Hospital Geral Dr. César Cals”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.726270, -38.533895]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital Infantil Albert Sabin”,
-                “latitude”: “-3.762770”,
-                “longitude”: “-38.531775”,
-                “discipline”: “Banco de Leite Humano”,
-                “title”: “Banco de Leite Humano do Hospital Albert Sabin”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.762770, -38.531775]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital Maternidade São Vicente de Paulo”,
-                “latitude”: “-7.311888”,
-                “longitude”: “-39.302724”,
-                “discipline”: “Banco de Leite Humano”,
-                “title”: “Banco de Leite Humano do Hospital Maternidade São Vicente de Paulo”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-7.311888, -39.302724]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital Municipal Dr. João Elísio de Holanda”,
-                “latitude”: “-3.878214”,
-                “longitude”: “-38.623573”,
-                “discipline”: “Banco de Leite Humano”,
-                “title”: “Banco de Leite Humano do Hospital Municipal Dr. João Elísio de Holanda”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.878214, -38.623573]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital Municipal São Lucas”,
-                “latitude”: “-7.205667”,
-                “longitude”: “-39.310265”,
-                “discipline”: “Banco de Leite Humano”,
-                “title”: “Banco de Leite Humano do Hospital Municipal São Lucas”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-7.205667, -39.310265]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital Regional Norte”,
-                “latitude”: “-3.676531”,
-                “longitude”: “-40.368399”,
-                “discipline”: “Banco de Leite Humano”,
-                “title”: “Banco de Leite Humano do Hospital Regional Norte”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.676531, -40.368399]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Maternidade Escola Assis Chateaubriand”,
-                “latitude”: “-3.748240”,
-                “longitude”: “-38.552390”,
-                “discipline”: “Banco de Leite Humano”,
-                “title”: “Banco de Leite Humano do Maternidade Escola Assis Chateaubriand”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.748240, -38.552390]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Posto de Saúde Ronaldo de Albuquerque Ribeiro”,
-                “latitude”: “-3.767835”,
-                “longitude”: “-38.596807”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do Posto de Saúde Ronaldo de Albuquerque Ribeiro”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.767835, -38.596807]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “UAPS Rigoberto Romero”,
-                “latitude”: “-3.751827”,
-                “longitude”: “-38.473381”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH da UAPS Rigoberto Romero”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.751827, -38.473381]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital Distrital Gonzaga Mota Barra do Ceará”,
-                “latitude”: “-3.715230”,
-                “longitude”: “-38.597611”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do Hospital Distrital Gonzaga Mota Barra do Ceará”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.715230, -38.597611]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital Regional Unimed”,
-                “latitude”: “-3.756228”,
-                “longitude”: “-38.520652”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do Hospital Regional Unimed”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.756228, -38.520652]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital São Camilo Cura d´Ars”,
-                “latitude”: “-3.728566”,
-                “longitude”: “-38.516077”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do Hospital São Camilo Cura d´Ars”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.728566, -38.516077]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital Nossa Senhora da Conceição”,
-                “latitude”: “-3.770490”,
-                “longitude”: “-38.616189”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do Hospital Nossa Senhora da Conceição”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.770490, -38.616189]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital Municipal Dr. Amadeu Sá”,
-                “latitude”: “-3.870770”,
-                “longitude”: “-38.469886”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do Hospital Municipal Dr. Amadeu Sá”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.870770, -38.469886]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital e Maternidade Venâncio Raimundo de Souza”,
-                “latitude”: “-4.097812”,
-                “longitude”: “-38.487278”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do Hospital e Maternidade Venâncio Raimundo de Souza”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-4.097812, -38.487278]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Posto de Saúde Dom Aloísio Lorscheider”,
-                “latitude”: “-3.795223”,
-                “longitude”: “-38.554388”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do Posto de Saúde Dom Aloísio Lorscheider”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.795223, -38.554388]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Unifametro - Centro Universitário”,
-                “latitude”: “-3.725446”,
-                “longitude”: “-38.540372”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do Unifametro - Centro Universitário”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.725446, -38.540372]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital Distrital Gonzaga Mota José Walter”,
-                “latitude”: “-3.830855”,
-                “longitude”: “-38.556793”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do Hospital Distrital Gonzaga Mota José Walter”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.830855, -38.556793]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Posto de Saúde Luis Franklin Pereira”,
-                “latitude”: “-3.837517”,
-                “longitude”: “-38.484484”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do Posto de Saúde Luis Franklin Pereira”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.837517, -38.484484]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “UBS - Dr. Roberto da Silva Bruno”,
-                “latitude”: “-3.760050”,
-                “longitude”: “-38.527830”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do UBS - Dr. Roberto da Silva Bruno”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.760050, -38.527830]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital Santa Luisa de Marillac”,
-                “latitude”: “-4.562194”,
-                “longitude”: “-37.770462”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do Hospital Santa Luisa de Marillac”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-4.562194, -37.770462]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “UNIFOR - Universidade de Fortaleza”,
-                “latitude”: “-3.768785”,
-                “longitude”: “-38.478059”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do NAMI/UNIFOR - Universidade de Fortaleza”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.768785, -38.478059]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital São Francisco de Canindé”,
-                “latitude”: “-4.362121”,
-                “longitude”: “-39.313678”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do Hospital São Francisco de Canindé”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-4.362121, -39.313678]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital Distrital Gonzaga Mota de Messejana”,
-                “latitude”: “-4.362121”,
-                “longitude”: “-39.313678”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do Hospital Distrital Gonzaga Mota de Messejana”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.822117, -38.481681]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital e Maternidade São Vicente de Paulo”,
-                “latitude”: “-3.499750”,
-                “longitude”: “-39.587636”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do Hospital e Maternidade São Vicente de Paulo”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.499750, -39.587636]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital e Maternidade José Martiniano de Alencar”,
-                “latitude”: “-3.734186”,
-                “longitude”: “-38.537827”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do Hospital e Maternidade José Martiniano de Alencar”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.734186, -38.537827]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital e Maternidade Dra. Zilda Arns Neumann (Hospital da Mulher de Fortaleza)”,
-                “latitude”: “-3.762910”,
-                “longitude”: “-38.574050”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do Hospital e Maternidade Dra. Zilda Arns Neumann (Hospital da Mulher de Fortaleza)”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.762910, -38.574050]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital Gênesis”,
-                “latitude”: “-3.731836”,
-                “longitude”: “-38.513396”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do Hospital Gênesis”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.731836, -38.513396]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital Eugênia Pinheiro Hapvida”,
-                “latitude”: “-3.735143”,
-                “longitude”: “-38.519940”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do Hospital Eugênia Pinheiro Hapvida”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.735143, -38.519940]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital Geral Dr Waldemar Alcântara”,
-                “latitude”: “-3.832231”,
-                “longitude”: “-38.480108”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do Hospital Geral Dr Waldemar Alcântara”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.832231, -38.480108]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Hospital e Maternidade José Pinto do Carmo”,
-                “latitude”: “-4.327858”,
-                “longitude”: “-38.882411”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH do Hospital e Maternidade José Pinto do Carmo”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-4.327858, -38.882411]
-            }
-        },
-        {
-            “type”: “Feature”,
-            “properties”: {
-                “location”:  “Santa Casa de Misericórdia de Sobral - SCMS”,
-                “latitude”: “-3.693552,”,
-                “longitude”: “-40.358902”,
-                “discipline”: “Ponto de Coleta”,
-                “title”: “PCLH da Santa Casa de Misericórdia de Sobral - SCMS”
-            },
-            “geometry”: {
-                “type”: “Point”,
-                “coordinates”: [-3.693552, -40.358902]
-            }
-        }
-    ]
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital e Maternidade Jesus Maria José",
+        "latitude": "-39.024525",
+        "longitude": "-4.966990",
+        "discipline": "Banco de Leite Humano",
+        "title": "BLH do Hospital e Maternidade Jesus Maria José"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -39.024525,
+          -4.966990
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital Geral de Fortaleza",
+        "latitude": "-38.476035",
+        "longitude": "-3.739328",
+        "discipline": "Banco de Leite Humano",
+        "title": "BLH do Hospital Geral de Fortaleza"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.476035,
+          -3.739328
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "ospital Geral Dr. César Cals",
+        "latitude": "-38.533895",
+        "longitude": "-3.726270",
+        "discipline": "Banco de Leite Humano",
+        "title": "BLH do Hospital Geral Dr. César Cals"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.533895,
+          -3.726270
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital Infantil Albert Sabin",
+        "latitude": "-38.531775",
+        "longitude": "-3.762770",
+        "discipline": "Banco de Leite Humano",
+        "title": "BLH do Hospital Albert Sabin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.531775,
+          -3.762770
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital Maternidade São Vicente de Paulo",
+        "latitude": "-39.302724",
+        "longitude": "-7.311888",
+        "discipline": "Banco de Leite Humano",
+        "title": "BLH do Hospital Maternidade São Vicente de Paulo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -39.302724,
+          -7.311888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital Municipal Dr. João Elísio de Holanda",
+        "latitude": "-38.623573",
+        "longitude": "-3.878214",
+        "discipline": "Banco de Leite Humano",
+        "title": "BLH do Hospital Municipal Dr. João Elísio de Holanda"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.623573,
+          -3.878214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital Municipal São Lucas",
+        "latitude": "-39.310265",
+        "longitude": "-7.205667",
+        "discipline": "Banco de Leite Humano",
+        "title": "BLH do Hospital Municipal São Lucas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -39.310265,
+          -7.205667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital Regional Norte",
+        "latitude": "-40.368399",
+        "longitude": "-3.676531",
+        "discipline": "Banco de Leite Humano",
+        "title": "BLH do Hospital Regional Norte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -40.368399,
+          -3.676531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Maternidade Escola Assis Chateaubriand",
+        "latitude": "-38.552390",
+        "longitude": "-3.748240",
+        "discipline": "Banco de Leite Humano",
+        "title": "BLH do Maternidade Escola Assis Chateaubriand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.552390,
+          -3.748240
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Posto de Saúde Ronaldo de Albuquerque Ribeiro",
+        "latitude": "-38.596807",
+        "longitude": "-3.767835",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do Posto de Saúde Ronaldo de Albuquerque Ribeiro"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.596807,
+          -3.767835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "UAPS Rigoberto Romero",
+        "latitude": "-38.473381",
+        "longitude": "-3.751827",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH da UAPS Rigoberto Romero"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.473381,
+          -3.751827
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital Distrital Gonzaga Mota Barra do Ceará",
+        "latitude": "-38.597611",
+        "longitude": "-3.715230",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do Hospital Distrital Gonzaga Mota Barra do Ceará"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.597611,
+          -3.715230
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital Regional Unimed",
+        "latitude": "-38.5206528",
+        "longitude": "-3.756228",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do Hospital Regional Unimed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.5206528,
+          -3.756228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital São Camilo Cura d´Ars",
+        "latitude": "-38.516077",
+        "longitude": "-3.728566",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do Hospital São Camilo Cura d´Ars"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.516077,
+          -3.728566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital Nossa Senhora da Conceição",
+        "latitude": "-38.616189",
+        "longitude": "-3.770490",
+       "discipline": "Ponto de Coleta",
+        "title": "PLCH do Hospital Nossa Senhora da Conceição"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.616189,
+          -3.770490
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital Municipal Dr. Amadeu Sá",
+        "latitude": "-38.469886",
+        "longitude": "-3.870770",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do Hospital Municipal Dr. Amadeu Sá"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.469886,
+          -3.870770
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital e Maternidade Venâncio Raimundo de Souza",
+        "latitude": "-38.487278",
+        "longitude": "-4.097812",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do Hospital e Maternidade Venâncio Raimundo de Souza"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.487278,
+          -4.097812
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Posto de Saúde Dom Aloísio Lorscheider",
+        "latitude": "-38.554388",
+        "longitude": "-3.795223",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do Posto de Saúde Dom Aloísio Lorscheider"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.554388,
+          -3.795223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Unifametro - Centro Universitário",
+        "latitude": "-38.540372",
+        "longitude": "-3.725446",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do Unifametro - Centro Universitário"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.540372,
+          -3.725446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital Distrital Gonzaga Mota José Walter",
+        "latitude": "-38.556793",
+        "longitude": "-3.830855",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do Hospital Distrital Gonzaga Mota José Walter"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.556793,
+          -3.830855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Posto de Saúde Luis Franklin Pereira",
+        "latitude": "-38.484484",
+        "longitude": "-3.837517",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do Posto de Saúde Luis Franklin Pereira"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.484484,
+          -3.837517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "UBS - Dr. Roberto da Silva Bruno",
+        "latitude": "-38.527830",
+        "longitude": "-3.760050",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do UBS - Dr. Roberto da Silva Bruno"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.527830,
+          -3.760050
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital Santa Luisa de Marillac",
+        "latitude": "-37.770462",
+        "longitude": "-4.562194",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do Hospital Santa Luisa de Marillac"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -37.770462,
+          -4.562194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "UNIFOR - Universidade de Fortaleza",
+        "latitude": "-38.478059",
+        "longitude": "-3.768785",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do NAMI/UNIFOR - Universidade de Fortaleza"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.478059,
+          -3.768785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital São Francisco de Canindé",
+        "latitude": "-39.313678",
+        "longitude": "-4.362121",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do Hospital São Francisco de Canindé"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -39.313678,
+          -4.362121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital Distrital Gonzaga Mota de Messejana",
+        "latitude": "-39.313678",
+        "longitude": "-4.362121",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do Hospital Distrital Gonzaga Mota de Messejana"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -39.313678,
+          -4.362121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital e Maternidade São Vicente de Paulo",
+        "latitude": "-39.587636",
+        "longitude": "-3.499750",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do Hospital e Maternidade São Vicente de Paulo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -39.587636,
+          -3.499750
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital e Maternidade José Martiniano de Alencar",
+        "latitude": "-38.537827",
+        "longitude": "-3.734186",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do Hospital e Maternidade José Martiniano de Alencar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.537827,
+          -3.734186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital e Maternidade Dra. Zilda Arns Neumann (Hospital da Mulher de Fortaleza)",
+        "latitude": "-38.574050",
+        "longitude": "-3.762910",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do Hospital e Maternidade Dra. Zilda Arns Neumann (Hospital da Mulher de Fortaleza)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.574050,
+          -3.762910
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital Gênesis",
+        "latitude": "-38.513396",
+        "longitude": "-3.731836",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do Hospital Gênesis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.513396,
+          -3.731836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital Eugênia Pinheiro Hapvida",
+        "latitude": "-38.519940",
+        "longitude": "-3.735143",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do Hospital Eugênia Pinheiro Hapvida"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.519940,
+          -3.735143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital Geral Dr Waldemar Alcântara",
+        "latitude": "-38.480108",
+        "longitude": "-3.832231",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do Hospital Geral Dr Waldemar Alcântara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.480108,
+          -3.832231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Hospital e Maternidade José Pinto do Carmo",
+        "latitude": "-38.882411",
+        "longitude": "-4.327858",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH do Hospital e Maternidade José Pinto do Carmo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.882411,
+          -4.327858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": "Santa Casa de Misericórdia de Sobral - SCMS",
+        "latitude": "-40.358902",
+        "longitude": "-3.693552",
+        "discipline": "Ponto de Coleta",
+        "title": "PCLH da Santa Casa de Misericórdia de Sobral - SCMS"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -40.358902,
+          -3.693552
+        ]
+      }
+    }
+  ]
 }
