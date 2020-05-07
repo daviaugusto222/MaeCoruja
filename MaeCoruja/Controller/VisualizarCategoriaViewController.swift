@@ -12,7 +12,7 @@ class VisualizarCategoriaViewController: UIViewController {
 
     @IBOutlet weak var TableViewCategoria: UITableView!
     
-    let temas:Array<String> = ["Caminhada", "Alongamentos", "Pilates", "Hidroginástica"]
+    let temas:Array<String> = ["Alongamentos","Caminhada", "Pilates", "Hidroginástica"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +43,29 @@ extension VisualizarCategoriaViewController: UITableViewDataSource, UITableViewD
         cell.imageViewCell?.image = UIImage(named: temas[indexPath.row])
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           if segue.identifier == "alongamento" {
+               let _ = segue.destination as! ConteudoGuiaViewController
+            }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cardSelected = temas[indexPath.row]
+        print("\(cardSelected) foi selecionada!")
+        
+        switch cardSelected {
+        case temas[0]:
+            performSegue(withIdentifier: "alongamento", sender: self)
+        case temas[1]:
+            print("Caminhada")
+        case temas[2]:
+            print("Pilates")
+        case temas[3]:
+            print("Hidroginástica")
+        default:
+            return
+        }
     }
 }
 
