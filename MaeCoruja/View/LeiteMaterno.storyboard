@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,9 +19,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="155" estimatedRowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SyF-VN-E83">
                                 <rect key="frame" x="0.0" y="106" width="375" height="512"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="sectionIndexBackgroundColor" name="Bege"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="Bege"/>
                         <constraints>
                             <constraint firstItem="SyF-VN-E83" firstAttribute="top" secondItem="ea9-1F-aDS" secondAttribute="top" constant="10" id="VvO-aA-qsq"/>
                             <constraint firstItem="ea9-1F-aDS" firstAttribute="bottom" secondItem="SyF-VN-E83" secondAttribute="bottom" id="sEZ-FS-2sK"/>
@@ -72,5 +74,8 @@
     </scenes>
     <resources>
         <image name="suit.heart.fill" catalog="system" width="128" height="109"/>
+        <namedColor name="Bege">
+            <color red="0.96470588235294119" green="0.95686274509803926" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

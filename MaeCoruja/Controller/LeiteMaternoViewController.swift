@@ -12,8 +12,8 @@ class LeiteMaternoViewController: UIViewController {
 
     let items: [(title: String, color: String)] = [
         (title: "Por que doar?", color: "LightPink"),
-        (title: "Como doar?", color: "Salmon"),
-        (title: "Postos de doação", color: "Purple")
+        (title: "Como doar?", color: "Purple"),
+        (title: "Postos de doação", color: "Salmon")
     ]
     
     @IBOutlet weak var table: UITableView!
