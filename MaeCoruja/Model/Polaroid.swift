@@ -22,7 +22,10 @@ struct Polaroid {
     
     static func createPolaroidCollection() -> [Polaroid] {
         var polaroids = [Polaroid]()
-        for _ in 0...5 { polaroids.append(Polaroid())}
+        for _ in 0...5 {
+            polaroids.append(Polaroid(titulo: <#String#>, fotoNome: <#String#>, data: <#String#>, texto: <#String#>))
+            
+        }
     }
     
 }
