@@ -13,10 +13,12 @@ class RecordacoesViewController: UIViewController {
     
     @IBOutlet weak var recordacoesCollection: UICollectionView!
     
-    
+    var polaroids: [Polaroid]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        polaroids = Polaroid.createPolaroidCollection()
         configureCollection()
         // Do any additional setup after loading the view.
     }
@@ -38,21 +40,28 @@ class RecordacoesViewController: UIViewController {
 
 extension RecordacoesViewController: SaveMomentDelegate {
     func addMomment(moment: Polaroid) {
-        print(moment)
+        self.polaroids.insert(moment, at: 0)
+        
+        recordacoesCollection.performBatchUpdates({
+            recordacoesCollection.insertItems(at: [IndexPath(item: 0, section: 0)])
+        }, completion: nil)
+        
     }
     
     
 }
 
 extension RecordacoesViewController: UICollectionViewDataSource, UICollectionViewDelegate{
+    
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return polaroids.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PolaroidCollectionViewCell.identifier, for: indexPath) as! PolaroidCollectionViewCell
-        
-        cell.configure(with: Polaroid.createPolaroid())
+        let pol = polaroids[indexPath.row]
+        cell.configure(with: pol)
         
         return cell
     }

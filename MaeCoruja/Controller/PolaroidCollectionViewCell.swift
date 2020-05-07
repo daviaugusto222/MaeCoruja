@@ -26,7 +26,7 @@ class PolaroidCollectionViewCell: UICollectionViewCell {
     }
     
     func configure(with polaroid: Polaroid) {
-        polaroidImage.image = UIImage(named: polaroid.fotoNome)
+        polaroidImage.image = polaroid.foto
         tituloLabel.text = polaroid.titulo
         dataLabel.text = polaroid.data
     }
