@@ -31,7 +31,8 @@
 		4B4E705A246363A700A539A9 /* GaleriaCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B4E7059246363A700A539A9 /* GaleriaCollectionCell.xib */; };
 		4B4E705C2463647700A539A9 /* GaleriaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E705B2463647700A539A9 /* GaleriaCollectionViewCell.swift */; };
 		4B4E705E2464B83700A539A9 /* VisualizarRecordacao.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B4E705D2464B83700A539A9 /* VisualizarRecordacao.storyboard */; };
-		4B4E70602464B87A00A539A9 /* VizualizarRecordacaoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E705F2464B87A00A539A9 /* VizualizarRecordacaoTableViewController.swift */; };
+		4B4E70622464BA8700A539A9 /* VisualizarRecordacaoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E70612464BA8700A539A9 /* VisualizarRecordacaoTableViewController.swift */; };
+		4B4E70642464BEE400A539A9 /* VisualizarRecordacaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E70632464BEE400A539A9 /* VisualizarRecordacaoTableViewCell.swift */; };
 		4BB79926245726CF0015CFF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB79925245726CF0015CFF6 /* AppDelegate.swift */; };
 		4BB79928245726CF0015CFF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB79927245726CF0015CFF6 /* SceneDelegate.swift */; };
 		4BB7992F245726D20015CFF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BB7992E245726D20015CFF6 /* Assets.xcassets */; };
@@ -93,7 +94,8 @@
 		4B4E7059246363A700A539A9 /* GaleriaCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GaleriaCollectionCell.xib; sourceTree = "<group>"; };
 		4B4E705B2463647700A539A9 /* GaleriaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleriaCollectionViewCell.swift; sourceTree = "<group>"; };
 		4B4E705D2464B83700A539A9 /* VisualizarRecordacao.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VisualizarRecordacao.storyboard; sourceTree = "<group>"; };
-		4B4E705F2464B87A00A539A9 /* VizualizarRecordacaoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VizualizarRecordacaoTableViewController.swift; sourceTree = "<group>"; };
+		4B4E70612464BA8700A539A9 /* VisualizarRecordacaoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizarRecordacaoTableViewController.swift; sourceTree = "<group>"; };
+		4B4E70632464BEE400A539A9 /* VisualizarRecordacaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizarRecordacaoTableViewCell.swift; sourceTree = "<group>"; };
 		4BB79922245726CF0015CFF6 /* MaeCoruja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaeCoruja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB79925245726CF0015CFF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BB79927245726CF0015CFF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -263,7 +265,8 @@
 				4B4E70572462CF7300A539A9 /* AdicionarViewController.swift */,
 				4B4E705B2463647700A539A9 /* GaleriaCollectionViewCell.swift */,
 				E63F670D2463221D00E91AE0 /* LeiteMaternoViewController.swift */,
-				4B4E705F2464B87A00A539A9 /* VizualizarRecordacaoTableViewController.swift */,
+				4B4E70612464BA8700A539A9 /* VisualizarRecordacaoTableViewController.swift */,
+				4B4E70632464BEE400A539A9 /* VisualizarRecordacaoTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -426,10 +429,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B4E70622464BA8700A539A9 /* VisualizarRecordacaoTableViewController.swift in Sources */,
 				E63F670E2463221D00E91AE0 /* LeiteMaternoViewController.swift in Sources */,
 				4BF3AE73245AFAB200659F75 /* PolaroidCollectionViewCell.swift in Sources */,
 				38F5C4742460E18E00BF1EB2 /* MapViewController.swift in Sources */,
-				4B4E70602464B87A00A539A9 /* VizualizarRecordacaoTableViewController.swift in Sources */,
 				0B82C60C246458C100730D03 /* ConteudoGuiaViewController.swift in Sources */,
 				0B82C6192464622000730D03 /* ConteudoGuiaTableViewCell.swift in Sources */,
 				4B4E70542462C89B00A539A9 /* GaleriaViewController.swift in Sources */,
@@ -438,6 +441,7 @@
 				4BB79926245726CF0015CFF6 /* AppDelegate.swift in Sources */,
 				4B4E70582462CF7300A539A9 /* AdicionarViewController.swift in Sources */,
 				383498B224645BCE00E9255B /* MilkBanksAndCollectionPointsView.swift in Sources */,
+				4B4E70642464BEE400A539A9 /* VisualizarRecordacaoTableViewCell.swift in Sources */,
 				0B82C60B246458C100730D03 /* ComoDoarViewController.swift in Sources */,
 				0B82C613246461EF00730D03 /* ContentTableViewCell.swift in Sources */,
 				4BF3AE6F245874A700659F75 /* RecordacoesViewController.swift in Sources */,

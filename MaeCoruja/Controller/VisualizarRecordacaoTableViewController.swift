@@ -1,5 +1,5 @@
 //
-//  VizualizarRecordacaoTableViewController.swift
+//  VisualizarRecordacaoTableViewController.swift
 //  MaeCoruja
 //
 //  Created by David Augusto on 07/05/20.
@@ -8,8 +8,12 @@
 
 import UIKit
 
-class VizualizarRecordacaoTableViewController: UITableViewController {
+class VisualizarRecordacaoTableViewController: UITableViewController {
 
+    
+    @IBOutlet weak var tableview: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

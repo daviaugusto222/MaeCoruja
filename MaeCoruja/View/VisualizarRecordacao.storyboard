@@ -3,24 +3,101 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Visualizar Recordacao Table View Controller-->
         <scene sceneID="Unx-Yk-uRc">
             <objects>
-                <viewController id="HhU-va-M6h" sceneMemberID="viewController">
+                <viewController id="HhU-va-M6h" customClass="VisualizarRecordacaoTableViewController" customModule="MaeCoruja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Txt-TL-GuF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jPp-lQ-xX8">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="499" id="ViA-eU-InS" customClass="VisualizarRecordacaoTableViewCell" customModule="MaeCoruja" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="499"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ViA-eU-InS" id="FEh-BV-e68">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="499"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqI-j8-N3o">
+                                                    <rect key="frame" x="20" y="11" width="374" height="477"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D0a-1Y-tnB">
+                                                            <rect key="frame" x="0.0" y="20" width="374" height="200"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="200" id="cTH-U8-lZQ"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkI-bw-30V">
+                                                            <rect key="frame" x="8" y="240" width="358" height="227"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="pkI-bw-30V" secondAttribute="trailing" constant="8" id="5AS-m2-BfT"/>
+                                                        <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="pkI-bw-30V" secondAttribute="bottom" constant="10" id="E4W-9L-zJg"/>
+                                                        <constraint firstAttribute="trailing" secondItem="D0a-1Y-tnB" secondAttribute="trailing" id="F6T-Vz-u6Q"/>
+                                                        <constraint firstItem="D0a-1Y-tnB" firstAttribute="leading" secondItem="hqI-j8-N3o" secondAttribute="leading" id="GgZ-Yh-kuD"/>
+                                                        <constraint firstItem="pkI-bw-30V" firstAttribute="top" secondItem="D0a-1Y-tnB" secondAttribute="bottom" constant="20" id="HRX-LL-CI8"/>
+                                                        <constraint firstItem="pkI-bw-30V" firstAttribute="leading" secondItem="hqI-j8-N3o" secondAttribute="leading" constant="8" id="T8u-Z3-AYQ"/>
+                                                        <constraint firstItem="D0a-1Y-tnB" firstAttribute="top" secondItem="hqI-j8-N3o" secondAttribute="top" constant="20" id="gvv-3Z-rQE"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hqI-j8-N3o" secondAttribute="trailing" id="5Pq-Ju-MI1"/>
+                                                <constraint firstItem="hqI-j8-N3o" firstAttribute="leading" secondItem="FEh-BV-e68" secondAttribute="leadingMargin" id="Bxt-sk-bNu"/>
+                                                <constraint firstItem="hqI-j8-N3o" firstAttribute="top" secondItem="FEh-BV-e68" secondAttribute="topMargin" id="KiH-Fn-xhT"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hqI-j8-N3o" secondAttribute="bottom" id="L8m-xy-1wv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="foto" destination="D0a-1Y-tnB" id="Nw4-WS-hw3"/>
+                                            <outlet property="texto" destination="pkI-bw-30V" id="aEY-Ah-hof"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="HhU-va-M6h" id="864-Py-R4n"/>
+                                    <outlet property="delegate" destination="HhU-va-M6h" id="Ms6-lC-V33"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" name="Bege"/>
+                        <constraints>
+                            <constraint firstItem="ojm-iS-dSc" firstAttribute="bottom" secondItem="jPp-lQ-xX8" secondAttribute="bottom" id="8sL-Jc-UVJ"/>
+                            <constraint firstItem="jPp-lQ-xX8" firstAttribute="leading" secondItem="ojm-iS-dSc" secondAttribute="leading" id="BrV-Hv-ylE"/>
+                            <constraint firstItem="jPp-lQ-xX8" firstAttribute="top" secondItem="ojm-iS-dSc" secondAttribute="top" id="Udc-EG-ToS"/>
+                            <constraint firstItem="ojm-iS-dSc" firstAttribute="trailing" secondItem="jPp-lQ-xX8" secondAttribute="trailing" id="WtF-HC-LGQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ojm-iS-dSc"/>
                     </view>
+                    <connections>
+                        <outlet property="tableview" destination="jPp-lQ-xX8" id="yej-Ta-4EM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pfp-YC-Esg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-13" y="69"/>
+            <point key="canvasLocation" x="-13.043478260869566" y="68.973214285714278"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="Bege">
+            <color red="0.96470588235294119" green="0.95686274509803926" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
