@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Collection Points Logo.png",
+      "filename" : "Ponto de Coleta.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Collection Points Logo@2x.png",
+      "filename" : "Ponto de Coleta@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Collection Points Logo@3x.png",
+      "filename" : "Ponto de Coleta@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

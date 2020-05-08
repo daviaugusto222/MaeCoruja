@@ -50,6 +50,8 @@
 		E63F67082463148B00E91AE0 /* CardMilkDonationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63F67072463148B00E91AE0 /* CardMilkDonationTableViewCell.xib */; };
 		E63F670A246314ED00E91AE0 /* CardMilkDonationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63F6709246314ED00E91AE0 /* CardMilkDonationViewCell.swift */; };
 		E63F670E2463221D00E91AE0 /* LeiteMaternoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63F670D2463221D00E91AE0 /* LeiteMaternoViewController.swift */; };
+		E63F671C2464D62000E91AE0 /* PorqueDoarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63F671B2464D62000E91AE0 /* PorqueDoarViewController.swift */; };
+		E63F671E2464D70E00E91AE0 /* PorqueDoar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E63F671D2464D70E00E91AE0 /* PorqueDoar.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,8 @@
 		E63F67072463148B00E91AE0 /* CardMilkDonationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardMilkDonationTableViewCell.xib; sourceTree = "<group>"; };
 		E63F6709246314ED00E91AE0 /* CardMilkDonationViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMilkDonationViewCell.swift; sourceTree = "<group>"; };
 		E63F670D2463221D00E91AE0 /* LeiteMaternoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeiteMaternoViewController.swift; sourceTree = "<group>"; };
+		E63F671B2464D62000E91AE0 /* PorqueDoarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PorqueDoarViewController.swift; sourceTree = "<group>"; };
+		E63F671D2464D70E00E91AE0 /* PorqueDoar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PorqueDoar.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +252,7 @@
 				E63F6709246314ED00E91AE0 /* CardMilkDonationViewCell.swift */,
 				383498B124645BCE00E9255B /* MilkBanksAndCollectionPointsView.swift */,
 				4B4E705D2464B83700A539A9 /* VisualizarRecordacao.storyboard */,
+				E63F671D2464D70E00E91AE0 /* PorqueDoar.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 				E63F670D2463221D00E91AE0 /* LeiteMaternoViewController.swift */,
 				4B4E70612464BA8700A539A9 /* VisualizarRecordacaoTableViewController.swift */,
 				4B4E70632464BEE400A539A9 /* VisualizarRecordacaoTableViewCell.swift */,
+				E63F671B2464D62000E91AE0 /* PorqueDoarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -395,6 +401,7 @@
 				0B82C62B246475AF00730D03 /* VisualizarCategoriaTableViewCell.xib in Resources */,
 				383498B02463018600E9255B /* MilkBanksAndCollectionPoints.geojson in Resources */,
 				38F5C4722460E0B000BF1EB2 /* Map.storyboard in Resources */,
+				E63F671E2464D70E00E91AE0 /* PorqueDoar.storyboard in Resources */,
 				4B4E70562462CF4900A539A9 /* AdicionarRecordacoes.storyboard in Resources */,
 				4BB7992F245726D20015CFF6 /* Assets.xcassets in Resources */,
 				E63F67082463148B00E91AE0 /* CardMilkDonationTableViewCell.xib in Resources */,
@@ -445,6 +452,7 @@
 				0B82C60B246458C100730D03 /* ComoDoarViewController.swift in Sources */,
 				0B82C613246461EF00730D03 /* ContentTableViewCell.swift in Sources */,
 				4BF3AE6F245874A700659F75 /* RecordacoesViewController.swift in Sources */,
+				E63F671C2464D62000E91AE0 /* PorqueDoarViewController.swift in Sources */,
 				4BB79928245726CF0015CFF6 /* SceneDelegate.swift in Sources */,
 				4BF3AE75245B0A1000659F75 /* Polaroid.swift in Sources */,
 				E63F670A246314ED00E91AE0 /* CardMilkDonationViewCell.swift in Sources */,

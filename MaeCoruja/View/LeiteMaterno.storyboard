@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,10 +18,12 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="155" estimatedRowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SyF-VN-E83">
                                 <rect key="frame" x="0.0" y="106" width="375" height="512"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="Bege"/>
                         <constraints>
                             <constraint firstItem="SyF-VN-E83" firstAttribute="top" secondItem="ea9-1F-aDS" secondAttribute="top" constant="10" id="VvO-aA-qsq"/>
                             <constraint firstItem="ea9-1F-aDS" firstAttribute="bottom" secondItem="SyF-VN-E83" secondAttribute="bottom" id="sEZ-FS-2sK"/>
@@ -33,6 +36,8 @@
                     <connections>
                         <outlet property="table" destination="SyF-VN-E83" id="NWQ-KM-VcE"/>
                         <segue destination="9j8-Fs-nOW" kind="show" identifier="showCard3" id="4Z9-Gg-WyE"/>
+                        <segue destination="tJh-Ep-g3x" kind="show" identifier="showCard2" id="ybD-QV-urZ"/>
+                        <segue destination="Ndm-sC-DES" kind="show" identifier="showCard1" id="lvJ-mD-9sw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djS-0f-iVN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -47,7 +52,27 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nbd-qR-Mlr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1778" y="83"/>
+            <point key="canvasLocation" x="746" y="538"/>
+        </scene>
+        <!--PorqueDoar-->
+        <scene sceneID="cZa-OZ-sJM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PorqueDoar" id="Ndm-sC-DES" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="txd-Bj-ush"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d7L-fb-Aca" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037" y="578"/>
+        </scene>
+        <!--ComoDoar-->
+        <scene sceneID="ANx-pQ-Arl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ComoDoar" id="tJh-Ep-g3x" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3cQ-Fs-5ok"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hbd-F9-CQZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1354" y="538"/>
         </scene>
         <!--Leite Materno-->
         <scene sceneID="qxK-Iu-IhY">
@@ -72,5 +97,8 @@
     </scenes>
     <resources>
         <image name="suit.heart.fill" catalog="system" width="128" height="109"/>
+        <namedColor name="Bege">
+            <color red="0.96470588235294119" green="0.95686274509803926" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
