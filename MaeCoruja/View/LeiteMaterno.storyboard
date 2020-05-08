@@ -37,6 +37,7 @@
                         <outlet property="table" destination="SyF-VN-E83" id="NWQ-KM-VcE"/>
                         <segue destination="9j8-Fs-nOW" kind="show" identifier="showCard3" id="4Z9-Gg-WyE"/>
                         <segue destination="tJh-Ep-g3x" kind="show" identifier="showCard2" id="ybD-QV-urZ"/>
+                        <segue destination="Ndm-sC-DES" kind="show" identifier="showCard1" id="lvJ-mD-9sw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djS-0f-iVN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -52,6 +53,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nbd-qR-Mlr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="746" y="538"/>
+        </scene>
+        <!--PorqueDoar-->
+        <scene sceneID="cZa-OZ-sJM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PorqueDoar" id="Ndm-sC-DES" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="txd-Bj-ush"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d7L-fb-Aca" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037" y="578"/>
         </scene>
         <!--ComoDoar-->
         <scene sceneID="ANx-pQ-Arl">

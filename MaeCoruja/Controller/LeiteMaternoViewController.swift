@@ -60,8 +60,11 @@ extension LeiteMaternoViewController: UITableViewDelegate, UITableViewDataSource
         if segue.identifier == "showCard3" {
             let _ = segue.destination as! MapViewController
         }
-        else if segue.identifier == "mostrarCard2" {
+        else if segue.identifier == "showCard2" {
             let _ = segue.destination as! ComoDoarViewController
+        }
+        else if segue.identifier == "showCard3" {
+            let _ = segue.destination as! PorqueDoarViewController
         }
     }
     
@@ -71,7 +74,7 @@ extension LeiteMaternoViewController: UITableViewDelegate, UITableViewDataSource
         switch cardSelected {
         case items[0].title:
             print("Por que?")
-            //performSegue(withIdentifier: "mostrarTela2", sender: self)
+            performSegue(withIdentifier: "showCard1", sender: self)
         case items[1].title:
             print("Como?")
             performSegue(withIdentifier: "showCard2", sender: self)

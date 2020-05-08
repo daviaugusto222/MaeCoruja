@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YzA-gS-B01">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Porque Doar View Controller-->
+        <scene sceneID="rlm-F0-4VG">
+            <objects>
+                <viewController id="YzA-gS-B01" customClass="PorqueDoarViewController" customModule="MaeCoruja" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aoy-Ij-M6V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t0m-sm-Rp8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" name="Bege"/>
+                        <constraints>
+                            <constraint firstItem="DYI-Rk-X1u" firstAttribute="trailing" secondItem="t0m-sm-Rp8" secondAttribute="trailing" id="1P9-o6-ihe"/>
+                            <constraint firstItem="DYI-Rk-X1u" firstAttribute="bottom" secondItem="t0m-sm-Rp8" secondAttribute="bottom" id="9ll-zc-Ghe"/>
+                            <constraint firstItem="t0m-sm-Rp8" firstAttribute="leading" secondItem="DYI-Rk-X1u" secondAttribute="leading" id="Rf1-so-Hvd"/>
+                            <constraint firstItem="t0m-sm-Rp8" firstAttribute="top" secondItem="DYI-Rk-X1u" secondAttribute="top" id="cLv-uR-gYw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DYI-Rk-X1u"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="t0m-sm-Rp8" id="uIp-L6-EGZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aGh-hR-f9R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-200" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Bege">
+            <color red="0.96470588235294119" green="0.95686274509803926" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
