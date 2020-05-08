@@ -10,10 +10,10 @@ import UIKit
 
 class LeiteMaternoViewController: UIViewController {
 
-    let items: [(title: String, color: String)] = [
-        (title: "Por que doar?", color: "LightPink"),
-        (title: "Como doar?", color: "Purple"),
-        (title: "Postos de doação", color: "Salmon")
+    let items: [(title: String, color: String, imageOfCard: String)] = [
+        (title: "Por que doar?", color: "LightPink", imageOfCard: "pqdoar"),
+        (title: "Como doar?", color: "Purple", imageOfCard: "comodoar"),
+        (title: "Postos de doação", color: "Salmon", imageOfCard: "mapa")
     ]
     
     @IBOutlet weak var table: UITableView!
@@ -52,6 +52,7 @@ extension LeiteMaternoViewController: UITableViewDelegate, UITableViewDataSource
         cell.backgroundColor = UIColor.clear
         cell.cardLabel.text = currentItem.title
         cell.cardImage.backgroundColor = UIColor.init(named: currentItem.color)
+        cell.cardImage.image = UIImage(named: currentItem.imageOfCard)
          
          return cell
     }
