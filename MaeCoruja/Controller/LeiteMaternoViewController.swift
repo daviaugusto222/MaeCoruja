@@ -25,7 +25,7 @@ class LeiteMaternoViewController: UIViewController {
         table.delegate = self
         table.dataSource = self
         
-        table.backgroundColor = .none
+        self.table.backgroundColor = UIColor.init(named: "Bege")
         table.separatorStyle = .none
 
         let tableCellNib = UINib(nibName: CardMilkDonationViewCell.nibName, bundle: nil)
@@ -33,6 +33,8 @@ class LeiteMaternoViewController: UIViewController {
 
 
     }
+    
+    
     
 }
 
@@ -46,10 +48,10 @@ extension LeiteMaternoViewController: UITableViewDelegate, UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier: CardMilkDonationViewCell.identifier, for: indexPath) as! CardMilkDonationViewCell
          
         let currentItem = items[indexPath.row]
-         
+        
+        cell.backgroundColor = UIColor.clear
         cell.cardLabel.text = currentItem.title
         cell.cardImage.backgroundColor = UIColor.init(named: currentItem.color)
-        
          
          return cell
     }
