@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,7 +11,7 @@
         <!--Como Doar View Controller-->
         <scene sceneID="9yA-vX-bgS">
             <objects>
-                <viewController id="53C-Rg-GWa" customClass="ComoDoarViewController" customModule="Testes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="53C-Rg-GWa" customClass="ComoDoarViewController" customModule="MaeCoruja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mPw-Hg-OwU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +25,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="Bege"/>
                         <constraints>
                             <constraint firstItem="qc4-n4-T8K" firstAttribute="trailing" secondItem="AVh-dX-WHU" secondAttribute="trailing" id="2vD-OS-1rF"/>
                             <constraint firstItem="AVh-dX-WHU" firstAttribute="top" secondItem="qc4-n4-T8K" secondAttribute="top" id="Wen-kk-RMn"/>
@@ -42,4 +43,9 @@
             <point key="canvasLocation" x="154" y="112"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="Bege">
+            <color red="0.96470588235294119" green="0.95686274509803926" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

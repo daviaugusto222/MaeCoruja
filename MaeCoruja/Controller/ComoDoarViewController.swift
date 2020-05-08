@@ -19,6 +19,7 @@ class ComoDoarViewController: UIViewController{
         super.viewDidLoad()
         title = "Como Doar"
         configureTable()
+        tableView.backgroundColor = UIColor.init(named: "Bege")
         
         // Do any additional setup after loading the view.
     }
@@ -50,7 +51,7 @@ extension ComoDoarViewController: UITableViewDataSource, UITableViewDelegate{
         cell.contentTextView.text = contents[indexPath.row]
         cell.imageView?.image = UIImage(named: titles[indexPath.row])
       
-        
+        cell.backgroundColor = UIColor.clear
         return cell
     }
     //IndexPath - Qual a seção e qual é a célula
