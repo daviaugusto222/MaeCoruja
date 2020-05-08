@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -52,7 +53,7 @@
                             </connections>
                         </textView>
                     </subviews>
-                    <color key="backgroundColor" red="0.96491402390000003" green="0.95753079649999995" blue="0.91986858839999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" name="Bege"/>
                     <constraints>
                         <constraint firstItem="XdR-2e-zJm" firstAttribute="leading" secondItem="6YB-cp-mkI" secondAttribute="leading" constant="10" id="3Dx-Lh-XTN"/>
                         <constraint firstItem="TDM-md-xBS" firstAttribute="top" secondItem="oO0-lL-Dkd" secondAttribute="bottom" constant="10" id="3gD-8T-mZu"/>
@@ -69,6 +70,7 @@
                     </constraints>
                 </view>
             </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="6YB-cp-mkI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="3eZ-ca-JxP"/>
                 <constraint firstAttribute="trailing" secondItem="6YB-cp-mkI" secondAttribute="trailing" constant="10" id="Hzu-6B-0n8"/>
@@ -77,8 +79,10 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="comoDoarImageView" destination="oO0-lL-Dkd" id="A7S-gX-bMh"/>
                 <outlet property="contentTextView" destination="TDM-md-xBS" id="mbT-hx-hna"/>
                 <outlet property="labelTitle" destination="4St-KS-K3k" id="hGq-Nn-Ht9"/>
+                <outlet property="viewMargin" destination="6YB-cp-mkI" id="ovb-S9-dRT"/>
                 <outlet property="viewTitle" destination="XdR-2e-zJm" id="sxQ-yM-6Qv"/>
             </connections>
             <point key="canvasLocation" x="-227.19999999999999" y="-327.88605697151428"/>
@@ -86,5 +90,8 @@
     </objects>
     <resources>
         <image name="leiteMaterno" width="512" height="340"/>
+        <namedColor name="Bege">
+            <color red="0.96470588235294119" green="0.95686274509803926" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
