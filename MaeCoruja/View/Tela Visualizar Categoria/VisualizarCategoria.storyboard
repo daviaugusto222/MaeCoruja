@@ -10,7 +10,7 @@
         <!--Visualizar Categoria View Controller-->
         <scene sceneID="wGV-n7-et8">
             <objects>
-                <viewController id="271-up-3Fb" customClass="VisualizarCategoriaViewController" customModule="Testes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="271-up-3Fb" customClass="VisualizarCategoriaViewController" customModule="MaeCoruja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VnR-g5-kKw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,11 +36,22 @@
                     </view>
                     <connections>
                         <outlet property="TableViewCategoria" destination="xDo-BZ-Kcj" id="CSc-xV-eYZ"/>
+                        <segue destination="Zy1-QT-gsC" kind="show" identifier="alongamento" id="tz1-LH-we8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oWT-hF-KjK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="242" y="-7"/>
+        </scene>
+        <!--ConteudoGuia-->
+        <scene sceneID="9da-qv-WWL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ConteudoGuia" id="Zy1-QT-gsC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gYr-99-rNZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UTw-sl-yFn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873" y="-218"/>
         </scene>
     </scenes>
 </document>

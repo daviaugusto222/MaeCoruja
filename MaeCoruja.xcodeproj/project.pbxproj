@@ -19,6 +19,7 @@
 		0B82C629246475AF00730D03 /* VisualizarCategoria.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B82C626246475AF00730D03 /* VisualizarCategoria.storyboard */; };
 		0B82C62A246475AF00730D03 /* VisualizarCategoriaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82C627246475AF00730D03 /* VisualizarCategoriaTableViewCell.swift */; };
 		0B82C62B246475AF00730D03 /* VisualizarCategoriaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B82C628246475AF00730D03 /* VisualizarCategoriaTableViewCell.xib */; };
+		0B82C62F2464973300730D03 /* ComoDoar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82C62E2464973300730D03 /* ComoDoar.swift */; };
 		382384AA24622D3200FC766D /* MilkBanksAndCollectionPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382384A924622D3200FC766D /* MilkBanksAndCollectionPoints.swift */; };
 		383498B02463018600E9255B /* MilkBanksAndCollectionPoints.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 383498AF2463018600E9255B /* MilkBanksAndCollectionPoints.geojson */; };
 		383498B224645BCE00E9255B /* MilkBanksAndCollectionPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383498B124645BCE00E9255B /* MilkBanksAndCollectionPointsView.swift */; };
@@ -84,6 +85,7 @@
 		0B82C626246475AF00730D03 /* VisualizarCategoria.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VisualizarCategoria.storyboard; sourceTree = "<group>"; };
 		0B82C627246475AF00730D03 /* VisualizarCategoriaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualizarCategoriaTableViewCell.swift; sourceTree = "<group>"; };
 		0B82C628246475AF00730D03 /* VisualizarCategoriaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisualizarCategoriaTableViewCell.xib; sourceTree = "<group>"; };
+		0B82C62E2464973300730D03 /* ComoDoar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComoDoar.swift; sourceTree = "<group>"; };
 		382384A924622D3200FC766D /* MilkBanksAndCollectionPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkBanksAndCollectionPoints.swift; sourceTree = "<group>"; };
 		383498AF2463018600E9255B /* MilkBanksAndCollectionPoints.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MilkBanksAndCollectionPoints.geojson; sourceTree = "<group>"; };
 		383498B124645BCE00E9255B /* MilkBanksAndCollectionPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkBanksAndCollectionPointsView.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 				4BF3AE74245B0A1000659F75 /* Polaroid.swift */,
 				382384A924622D3200FC766D /* MilkBanksAndCollectionPoints.swift */,
 				383498AF2463018600E9255B /* MilkBanksAndCollectionPoints.geojson */,
+				0B82C62E2464973300730D03 /* ComoDoar.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 			files = (
 				4B4E70622464BA8700A539A9 /* VisualizarRecordacaoTableViewController.swift in Sources */,
 				E63F670E2463221D00E91AE0 /* LeiteMaternoViewController.swift in Sources */,
+				0B82C62F2464973300730D03 /* ComoDoar.swift in Sources */,
 				4BF3AE73245AFAB200659F75 /* PolaroidCollectionViewCell.swift in Sources */,
 				38F5C4742460E18E00BF1EB2 /* MapViewController.swift in Sources */,
 				0B82C60C246458C100730D03 /* ConteudoGuiaViewController.swift in Sources */,
@@ -624,7 +628,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MaeCoruja/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -642,7 +646,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MaeCoruja/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

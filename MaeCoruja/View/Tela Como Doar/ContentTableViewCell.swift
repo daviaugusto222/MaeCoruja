@@ -11,6 +11,7 @@ import UIKit
 class ContentTableViewCell: UITableViewCell {
 
     
+    @IBOutlet weak var comoDoarImageView: UIImageView!
     @IBOutlet weak var viewMargin: UIView!
     @IBOutlet weak var viewTitle: UIView!
     @IBOutlet weak var labelTitle: UILabel!
@@ -26,9 +27,21 @@ class ContentTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        applyShadow()
 
     }
+    
+    func applyShadow() {
+        //Deixando o shadow passar das fronteiras da mascara da layer da contentView da celula
+        self.contentView.layer.masksToBounds = false
+        
+        comoDoarImageView.layer.cornerRadius = 12.0
+        comoDoarImageView.layer.shadowColor = UIColor.black.cgColor
+        comoDoarImageView.layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
+        comoDoarImageView.layer.shadowRadius = 8.0
+        comoDoarImageView.layer.shadowOpacity = 0.2
+    }
+    
 
    /* override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

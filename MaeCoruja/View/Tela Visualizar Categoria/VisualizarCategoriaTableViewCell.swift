@@ -33,11 +33,11 @@ class VisualizarCategoriaTableViewCell: UITableViewCell {
         imageViewCell.layer.shadowOpacity = 0.2
     }
 
-    /*override func setSelected(_ selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+       // imageViewCell.backgroundColor = UIColor.init(red: <#T##CGFloat#>, green: <#T##CGFloat#>, blue: <#T##CGFloat#>, alpha: <#T##CGFloat#>)
         
-    }*/
+    }
 
 }
